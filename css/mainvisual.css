@@ -1,0 +1,137 @@
+/* メインビジュアル */
+.mainVisual {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-image: url(../img/speech01.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.mainVisual::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-color: rgba(255, 255, 255, 0.2); 白色の半透明背景 */
+}
+.mainVisual__title {
+  width: 100%;
+  font-family: "Sharp", serif;
+  font-size: 6rem;
+  color: #fff;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 1;
+  text-align: center;
+  letter-spacing: 0.05em;
+  animation: titleRizing 5s;
+}
+
+@keyframes titleRizing {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.title__gold {
+  color: #fff;
+  text-shadow: 3px 3px 3px #ffd700;
+  font-size: 7rem;
+  opacity: 0;
+  animation: titleRizing 5s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+.mainVisual__title::before {
+  display: block;
+  content: "2024";
+  position: absolute;
+  font-family: fantasy;
+  font-size: 7rem;
+  color: #fff;
+  left: 50%;
+  bottom: -8rem;
+  opacity: 0;
+  transform: translateX(-45%);
+  letter-spacing: 0.3em;
+  animation: titleRizing 5s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
+
+.mainVisual__title::after {
+  position: absolute;
+  display: block;
+  content: "2024/12/14";
+  color: #000;
+  background-image: radial-gradient(
+    circle,
+    rgba(255, 242, 58, 1),
+    rgba(224, 162, 8, 1) 80%
+  );
+  width: 15rem;
+  padding: 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: -0.01em;
+  top: -2rem;
+  right: 32%;
+  text-shadow: none;
+  transform: rotate(15deg);
+  opacity: 0;
+  animation: titleRizing 5s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
+@media (max-width: 1024px) {
+  .mainVisual__title::after {
+    right: 25%;
+  }
+}
+@media (max-width: 768px) {
+  .mainVisual {
+    height: 90vh;
+  }
+  .mainVisual__title {
+    font-size: 5rem;
+  }
+  .title__gold {
+    font-size: 6rem;
+  }
+  .mainVisual__title::before {
+    font-size: 6rem;
+  }
+  .mainVisual__title::after {
+    width: 13rem;
+    font-size: 1.6rem;
+    right: 17%;
+  }
+}
+@media (max-width: 480px) {
+  .mainVisual {
+    height: 90vh;
+  }
+  .mainVisual__title {
+    font-size: 4rem;
+  }
+  .title__gold {
+    font-size: 5rem;
+  }
+  .mainVisual__title::before {
+    font-size: 5rem;
+  }
+  .mainVisual__title::after {
+    width: 11rem;
+    font-size: 1.4rem;
+    right: 10%;
+  }
+}

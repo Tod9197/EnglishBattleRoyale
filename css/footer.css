@@ -1,0 +1,136 @@
+.footer {
+  width: 100%;
+  height: auto;
+  padding: 5rem 0 15rem;
+  background-color: #000;
+  box-sizing: border-box;
+}
+@media (max-width: 480px) {
+  .footer {
+    padding-bottom: 5rem;
+  }
+}
+.footerFlex {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+@media (max-width: 768px) {
+  .footerFlex {
+    flex-direction: column;
+  }
+}
+.footer__logo {
+  font-family: cursive;
+  font-size: 5rem;
+  background-image: radial-gradient(
+    circle,
+    rgba(255, 242, 58, 1),
+    rgba(224, 162, 8, 1) 80%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  line-height: 1;
+}
+@media (max-width: 768px) {
+  .footer__logo {
+    margin: auto;
+    margin-bottom: 5rem;
+  }
+}
+
+.footerList {
+  display: flex;
+  justify-content: space-between;
+  overflow: auto;
+}
+@media (max-width: 480px) {
+  .footerList {
+    flex-direction: column;
+  }
+}
+.footerList__item {
+  margin-right: 5rem;
+}
+@media (max-width: 480px) {
+  .footerList__item {
+    width: 100%;
+  }
+}
+.footerList__item:last-child {
+  margin-right: 0;
+}
+@media (max-width: 768px) {
+  .footerList__item {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+.footerList__itemTitle {
+  font-family: "Sharp", serif;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+  letter-spacing: 0;
+  margin-bottom: 1.5rem;
+}
+.footerList__itemTitle.-gallery,
+.footerList__itemTitle.-contest,
+.footerList__itemTitle.-interview,
+.footerList__itemTitle.-sponsors {
+  margin-top: 5rem;
+}
+@media (max-width: 768px) {
+  .footerList__itemTitle.-gallery,
+  .footerList__itemTitle.-contest,
+  .footerList__itemTitle.-interview,
+  .footerList__itemTitle.-sponsors {
+    margin-top: 2rem;
+  }
+}
+
+.footerList__item a {
+  font-family: "Sharp", serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #fff;
+  letter-spacing: 0;
+}
+.footerList__item a:hover {
+  background-image: radial-gradient(
+    circle,
+    rgba(255, 242, 58, 1),
+    rgba(224, 162, 8, 1) 80%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+@media (max-width: 768px) {
+  .footerList__itemTitle {
+    font-size: 1.6rem;
+  }
+  .footerList__item a {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer__logo {
+    font-size: 4rem;
+  }
+  .footerList__itemTitle {
+    display: contents;
+    font-size: 2.4rem;
+    width: 100%;
+  }
+  .footerList__item a {
+    display: block;
+    font-size: 1.8rem;
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+  }
+}

@@ -1,0 +1,7 @@
+# WordPress core filesを無視
+/wp-admin/
+/wp-includes/
+
+# wp-contentの中で無視するファイル
+/wp-content/plugins/
+/wp-content/uploads/

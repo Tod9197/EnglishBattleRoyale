@@ -1,0 +1,30 @@
+.gallery__archive {
+  width: 100%;
+  padding: 15rem 0 30rem;
+  background-image: url(../img/bg02.jpg);
+}
+.gallery__archiveTitle {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 0.1em;
+  margin-bottom: 10rem;
+}
+
+.gallery__archiveList {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  margin-bottom: 15rem;
+}
+.gallery__archiveList__item {
+  cursor: pointer;
+  box-shadow: 5px 5px 5px #333;
+}
+
+.gallery__archiveList__item img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 360/300;
+  object-fit: cover;
+}
