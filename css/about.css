@@ -104,7 +104,7 @@
 .aboutSubTitle {
   font-family: "MS Mincho", serif;
   color: #000;
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-weight: bold;
   text-align: left;
   letter-spacing: 0.2em;
@@ -124,6 +124,16 @@
 }
 .aboutSubTitle.-second {
   text-align: center;
+  background-image: linear-gradient(
+    150deg,
+    rgba(247, 166, 12, 1) 10%,
+    rgba(255, 34, 87, 1) 40%,
+    rgba(154, 39, 238, 1) 68%,
+    rgba(35, 102, 247, 1) 90%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 .aboutText {
@@ -219,7 +229,11 @@
     font-size: 5rem;
   }
   .aboutSubTitle {
-    font-size: 2.4rem;
+    font-size: 3rem;
+  }
+  .aboutSubTitle.-second {
+    font-size: 2.8rem;
+    margin-bottom: 5rem;
   }
   .aboutText {
     font-size: 1.8rem;
@@ -252,7 +266,11 @@
 }
 @media (max-width: 768px) {
   .aboutSubTitle {
-    font-size: 2rem;
+    font-size: 2.4rem;
+  }
+  .aboutSubTitle.-second {
+    text-align: left;
+    margin-bottom: 5rem;
   }
   .aboutFlex.-first {
     flex-direction: column-reverse;
@@ -313,13 +331,12 @@
     margin-bottom: 3rem;
   }
   .aboutSubTitle.-first {
-    font-size: 1.8rem;
-    letter-spacing: 0.1em;
+    font-size: 2rem;
+    letter-spacing: 0.05em;
   }
   .aboutSubTitle.-second {
-    font-size: 1.8rem;
-    text-align: left;
-    margin-bottom: 5rem;
+    font-size: 2.2rem;
+    margin-bottom: 4rem;
   }
   .aboutFlex.-first {
     margin-bottom: 5rem;

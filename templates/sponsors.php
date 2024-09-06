@@ -16,9 +16,9 @@ get_header();
         <div class="sponsors__outline">
           <div class="sponsors__inline">
             <h2 class="sponsors__title">SPONSORs</h2>
-            <p class="sponsors__subTitle">協賛一覧(順不同)</p>
+            <p class="sponsors__subTitle">協賛一覧</p>
             <div class="sponsors__inner">
-              <h3 class="sponsors__innerTitle">2023年度EBR 協賛企業様・個人様</h3>
+              <h3 class="sponsors__innerTitle">2023年度EBR <br class="sp-only02">協賛企業様・個人様</br></h3>
               <ul class="sponsors__list">
                 <li class="sponsors__listItem">メタハンズ(株) 様</li>
                 <li class="sponsors__listItem">EFT Kawagoe 様</li>
@@ -77,7 +77,8 @@ get_header();
               <li class="sponsors__listItem -second">吉田道子 様</li>
               <li class="sponsors__listItem -second">四ッ橋奈央 様</li>
               </ul>
-            <p class="sponsors__text">EBRの開催にご協力いただきました皆様、誠にありがとうございました。<br>皆様の温かいご支援のおかげで、2023年度EBRは大成功を収めることができました。<br>改めて心より感謝申し上げます。<br>今後とも<span>升砲館EBR</span>をよろしくお願いいたします。</p>
+            <p class="sponsors__text">EBRの開催にご協力いただきました皆様、誠にありがとうございました。<br class="pc-only03">皆様の温かいご支援のおかげで、2023年度EBRは大成功を収めることができました。<br class="pc-only03">改めて心より感謝申し上げます。
+            <p class="sponsors__text -second">今後とも<span>升砲館EBR</span>をよろしくお願いいたします。</p>
             <p class="sponsors__textSecond">ー EBR2023実行委員会 ー</p>
             </div>
           </div>

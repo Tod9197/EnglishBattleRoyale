@@ -16,6 +16,30 @@ get_header(); ?>
 
 <!-- タイマー -->
 <section class="Timer">
+
+<!-- 申し込みリンク -->
+<div class="requestLink">
+  <div class="requestLink__flex">
+    <a class="requestLink__item -guest" href="" id="js-request-guest">
+      <p class="requestLink__text">(ゲストの方)<br>　申し込む</p>
+    </a>
+    <a class="requestLink__item -student" href="" id="js-request-student">
+      <p class="requestLink__text -student">(門下生)<br>申し込む</p>
+    </a>
+  </div>
+</div>
+
+<div class="requestLink -mobile">
+  <div class="requestLink__flex -mobile">
+    <a class="requestLink__item -guest" href="" id="js-request-guest">
+      <p class="requestLink__text">申し込む<br>(ゲストの方)</p>
+    </a>
+    <a class="requestLink__item -student" href="" id="js-request-student">
+      <p class="requestLink__text -student">申し込む<br>(門下生)</p>
+    </a>
+  </div>
+</div>
+
   <div class="Timer__wrap">
   <div class="inner">
   <h2 class="Timer__title"><span>火花散る！！<br class="Timer__title__spOnly">度肝抜かれる</span><br>決戦まで</h2>
@@ -25,8 +49,16 @@ get_header(); ?>
     <span class="Timer__text" id="timer-min"></span>分
     <span class="Timer__text" id="timer-sec"></span>秒
   </div>
+  <div class="requestWrap">
+    <div class="requestInner__line">
+  <p class="requestText">EBRに申し込む</p>
+  <div class="requestButton__flex">
+  <a class="requestButton -guest" href="https://forms.gle/PXEnGuvDbKvfGPa69" target="_blank" rel="noopener noreferrer">ゲストの方はこちら</a>
+  <a class="requestButton -student" href="https://forms.gle/PXEnGuvDbKvfGPa69" target="_blank" rel="noopener noreferrer">門下生はこちら</a>
   </div>
-  <a class="request__button" href="https://forms.gle/PXEnGuvDbKvfGPa69" target="_blank" rel="noopener noreferrer">申し込む</a>
+  </div>
+  </div>
+  </div>
   </div>
 </section>
 
@@ -125,8 +157,15 @@ get_header(); ?>
       </li>
     </ul>
   </div>
-  <!-- 申込ボタン -->
-  <a class="request__button" href="https://forms.gle/PXEnGuvDbKvfGPa69" target="_blank" rel="noopener noreferrer">申し込む</a>
+  <div class="requestWrap -about">
+    <div class="requestInner__line">
+  <p class="requestText -about">EBRに申し込む</p>
+  <div class="requestButton__flex -about">
+  <a class="requestButton -guest" href="https://forms.gle/PXEnGuvDbKvfGPa69" target="_blank" rel="noopener noreferrer">ゲストの方はこちら</a>
+  <a class="requestButton -student" href="https://forms.gle/PXEnGuvDbKvfGPa69" target="_blank" rel="noopener noreferrer">門下生はこちら</a>
+  </div>
+  </div>
+  </div>
   </div>
 </section>
 
@@ -321,7 +360,7 @@ $the_query = new WP_Query($args);
   ?>
   <div class="galleryImg__listItem">
   <?php the_post_thumbnail('full',array('class'=>'')); ?>
-    </div>
+  </div>
 <?php  
 endif;
 endwhile;
@@ -335,9 +374,11 @@ else :
   <a class="galleryImg__link" href="<?php echo esc_url(home_url('/gallery')) ?>">写真をもっと見る</a>
 
   <!-- モーダル -->
-  <div class="gallery__modal" id="js-gallery__modalBack">
-    <div class="gallery__modalInner">
-      <button class="gallery__modalInner__btn" id="js-gallery__modalClose">X</button>
+  <div class="modal" id="imageModal" >
+    <div class="modal__wrap">
+     <span class="modal__close">&times;</span>
+    <img class="modal__content" id="modalImage">
+    <div id="caption"></div>
     </div>
   </div>
 

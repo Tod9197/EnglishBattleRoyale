@@ -75,18 +75,55 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 //イベントタイマーここまで
 
-//Gallery画像モーダル
-// const GalleryModalBtn = document.getElementById("js-gallery__modalBtn");
-// const GalleryModalback = document.getElementById("js-gallery__modalBack");
-// const GalleryModalCloseBtn = document.getElementById("js-gallery__modalClose");
+// Gallery 画像モーダル;
+let modal = document.getElementById("imageModal");
+let modalImg = document.getElementById("modalImage");
+let captionText = document.getElementById("caption");
 
-// GalleryModalBtn.addEventListener("click", () => {
-//   GalleryModalback.classList.add("on");
-// });
+let galleryItems = document.querySelectorAll(".galleryImg__listItem img");
 
-// GalleryModalCloseBtn.addEventListener("click", () => {
-//   GalleryModalback.classList.remove("on");
-// });
-// GalleryModalback.addEventListener("click", () => {
-//   GalleryModalback.classList.remove("on");
-// });
+galleryItems.forEach(function (item) {
+  item.onclick = function () {
+    modal.classList.add("show");
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+  };
+
+  let closeBtn = document.querySelector(".modal__close");
+  closeBtn.onclick = function () {
+    modal.classList.remove("show");
+  };
+
+  window.onclick = function (e) {
+    if (e.target === modal) {
+      modal.classList.remove("show");
+    }
+  };
+});
+
+// 申し込みリンクの表示
+document.addEventListener("DOMContentLoaded", function () {
+  const requestLink = document.querySelector(".requestLink");
+  const requestLinkMobile = document.querySelector(".requestLink.-mobile");
+
+  // requestLink が存在する場合のみ処理を実行
+  if (requestLink && requestLinkMobile) {
+    // 初期表示時に現在のスクロール位置を確認してリンクを表示
+    if (window.scrollY > 200) {
+      requestLink.classList.add("show");
+      requestLinkMobile.classList.add("show");
+    }
+
+    // スクロールイベントを監視
+    window.addEventListener("scroll", function () {
+      // スクロール位置が200pxを超えたら表示する
+      if (window.scrollY > 200) {
+        requestLink.classList.add("show");
+        requestLinkMobile.classList.add("show");
+      } else {
+        requestLink.classList.remove("show");
+        requestLinkMobile.classList.remove("show");
+      }
+    });
+  }
+});

@@ -1,6 +1,6 @@
 /* Sponsors */
 .sponsors {
-  padding: 30rem 0 30rem;
+  padding: 30rem 0 15rem;
   background-color: #f0f0f0;
   background-image: url(../img/bg02.jpg);
 }
@@ -30,11 +30,11 @@
   position: absolute;
 }
 .sponsors__subTitle {
-  font-size: 2rem;
+  font-size: 2.4rem;
   text-align: center;
   color: #000;
   margin-bottom: 5rem;
-  margin-top: -2rem;
+  margin-top: -3rem;
   letter-spacing: 0.1em;
 }
 .sponsors__inner {
@@ -62,6 +62,9 @@
   line-height: 2;
   letter-spacing: 0.1em;
   text-align: center;
+  margin-bottom: 2rem;
+}
+.sponsors__text.-second {
   margin-bottom: 4rem;
 }
 .sponsors__text span {
@@ -74,7 +77,6 @@
   line-height: 2;
   letter-spacing: 0.1em;
   text-align: center;
-  margin-bottom: 1rem;
 }
 .sponsors__list {
   display: flex;
@@ -104,14 +106,77 @@
   .sponsors__title {
     font-size: 6rem;
   }
+  .sponsors__subTitle {
+    font-size: 2.2rem;
+    margin-top: -2rem;
+  }
+  .sponsors__text {
+    font-size: 1.8rem;
+  }
+  .sponsors__textSecond {
+    font-size: 2.2rem;
+  }
 }
 @media (max-width: 768px) {
+  .sponsors {
+    padding-bottom: 10rem;
+  }
   .sponsors__title {
     font-size: 5rem;
   }
+  .sponsors__title::after {
+    top: 16rem;
+  }
+  .sponsors__subTitle {
+    font-size: 2rem;
+    margin-top: -3rem;
+    margin-bottom: 2rem;
+  }
+  .sponsors__inner {
+    padding: 2rem 2rem;
+  }
+  .sponsors__innerTitle {
+    font-size: 1.8rem;
+  }
+  .sponsors__text {
+    font-size: 1.6rem;
+  }
+  .sponsors__textSecond {
+    font-size: 2rem;
+  }
 }
 @media (max-width: 480px) {
+  .sponsors__contents {
+    padding: 5px;
+  }
   .sponsors__title {
-    font-size: 4rem;
+    font-size: 3.6rem;
+    padding: 5rem 0 5rem 0;
+  }
+  .sponsors__title::after {
+    top: 9rem;
+  }
+  .sponsors__subTitle {
+    font-size: 1.6rem;
+    margin-top: -4rem;
+  }
+  .sponsors__inner {
+    padding: 2rem 1rem;
+  }
+  .sponsors__innerTitle::after {
+    top: 7rem;
+  }
+  .sponsors__innerTitle {
+    font-size: 1.6rem;
+  }
+  .sponsors__innerTitle::after {
+    top: 6rem;
+  }
+  .sponsors__text {
+    font-size: 1.4rem;
+    text-align: left;
+  }
+  .sponsors__textSecond {
+    font-size: 1.6rem;
   }
 }
