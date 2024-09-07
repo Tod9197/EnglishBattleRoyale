@@ -79,14 +79,21 @@ document.addEventListener("DOMContentLoaded", function () {
 let modal = document.getElementById("imageModal");
 let modalImg = document.getElementById("modalImage");
 let captionText = document.getElementById("caption");
+let galleryItems = document.querySelectorAll(
+  ".galleryImg__listItem img, .galleryArchive__listItem img"
+);
 
-let galleryItems = document.querySelectorAll(".galleryImg__listItem img");
+// モーダル表示時のスクロール位置を保存するための変数
+let initialScrollY = 0;
 
 galleryItems.forEach(function (item) {
   item.onclick = function () {
     modal.classList.add("show");
     modalImg.src = this.src;
     captionText.innerHTML = this.alt;
+
+    // モーダルを開いた時のスクロール位置を記録
+    initialScrollY = window.scrollY;
   };
 
   let closeBtn = document.querySelector(".modal__close");
@@ -99,12 +106,25 @@ galleryItems.forEach(function (item) {
       modal.classList.remove("show");
     }
   };
+
+  // 上下100px以上スクロールしたらモーダルを閉じる
+  window.addEventListener("scroll", function () {
+    if (modal.classList.contains("show")) {
+      let currentScrollY = this.window.scrollY;
+      if (Math.abs(currentScrollY - initialScrollY) > 500) {
+        modal.classList.remove("show");
+      }
+    }
+  });
 });
 
 // 申し込みリンクの表示
 document.addEventListener("DOMContentLoaded", function () {
   const requestLink = document.querySelector(".requestLink");
   const requestLinkMobile = document.querySelector(".requestLink.-mobile");
+  const hamburgerBtn = document.getElementById("js-hamburger");
+
+  let isHamburgerMenuOpen = false; // 変数をスコープ内で定義
 
   // requestLink が存在する場合のみ処理を実行
   if (requestLink && requestLinkMobile) {
@@ -116,12 +136,26 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // スクロールイベントを監視
     window.addEventListener("scroll", function () {
-      // スクロール位置が200pxを超えたら表示する
-      if (window.scrollY > 200) {
-        requestLink.classList.add("show");
+      if (!isHamburgerMenuOpen) {
+        // ハンバーガーメニューが開いていないときのみ処理を実行
+        if (window.scrollY > 200) {
+          requestLink.classList.add("show");
+          requestLinkMobile.classList.add("show");
+        } else {
+          requestLink.classList.remove("show");
+          requestLinkMobile.classList.remove("show");
+        }
+      }
+    });
+  }
+
+  // ハンバーガーメニューのクリックでリンクボタンの表示/非表示をトグル
+  if (hamburgerBtn) {
+    hamburgerBtn.addEventListener("click", function () {
+      isHamburgerMenuOpen = !isHamburgerMenuOpen; // ハンバーガーメニューの状態をトグル
+      if (isHamburgerMenuOpen) {
         requestLinkMobile.classList.add("show");
       } else {
-        requestLink.classList.remove("show");
         requestLinkMobile.classList.remove("show");
       }
     });

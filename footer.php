@@ -13,7 +13,7 @@
         <p class="footerList__itemTitle">ACCESS</p>
         <a href="<?php echo esc_url(home_url('/#access')); ?>">開催場所</a>
         <p class="footerList__itemTitle -gallery">GALLERY</p>
-        <a href="<?php echo esc_url(home_url('/gallery')); ?>">2023年度の画像</a>
+        <a href="<?php echo esc_url(home_url('/gallerylist')); ?>">2023年度の画像</a>
       </li>
       <li class="footerList__item">
         <p class="footerList__itemTitle">TIME TABLE</p>

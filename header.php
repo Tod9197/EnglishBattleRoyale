@@ -28,7 +28,7 @@
         <div class="header__menuRight">
         <ul class="header__listRight">
           
-          <li class="header__listItem"><a href="<?php echo esc_url(home_url('/gallery')); ?>">gallery</a></li>
+          <li class="header__listItem"><a href="<?php echo esc_url(home_url('/gallerylist')); ?>">gallery</a></li>
           <li class="header__listItem"><a href="<?php echo esc_url(home_url('/#access')); ?>">access</a></li>
           <li class="header__listItem"><a href="/">contact</a></li>
         </ul>

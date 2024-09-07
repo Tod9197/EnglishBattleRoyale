@@ -20,10 +20,10 @@ get_header(); ?>
 <!-- 申し込みリンク -->
 <div class="requestLink">
   <div class="requestLink__flex">
-    <a class="requestLink__item -guest" href="" id="js-request-guest">
+    <a class="requestLink__item -guest" href="https://docs.google.com/forms/d/e/1FAIpQLSeN66tRCIuVy8_pssjk8pJMNnZeN5tHjHtCJwJsNybvOeVeBw/viewform" id="js-request-guest" target="_blank" rel="noopener noreferrer">
       <p class="requestLink__text">(ゲストの方)<br>　申し込む</p>
     </a>
-    <a class="requestLink__item -student" href="" id="js-request-student">
+    <a class="requestLink__item -student" href="https://docs.google.com/forms/d/e/1FAIpQLScj2b2ZH2SKMyr6FCwwrMk-jblrtCCySUv3Il8_u3893Rt24w/viewform" id="js-request-student" target="_blank" rel="noopener noreferrer">
       <p class="requestLink__text -student">(門下生)<br>申し込む</p>
     </a>
   </div>
@@ -31,14 +31,16 @@ get_header(); ?>
 
 <div class="requestLink -mobile">
   <div class="requestLink__flex -mobile">
-    <a class="requestLink__item -guest" href="" id="js-request-guest">
+    <a class="requestLink__item -guest" href="https://docs.google.com/forms/d/e/1FAIpQLSeN66tRCIuVy8_pssjk8pJMNnZeN5tHjHtCJwJsNybvOeVeBw/viewform" id="js-request-guest"
+    target="_blank" rel="noopener noreferrer">
       <p class="requestLink__text">申し込む<br>(ゲストの方)</p>
     </a>
-    <a class="requestLink__item -student" href="" id="js-request-student">
+    <a class="requestLink__item -student" href="https://docs.google.com/forms/d/e/1FAIpQLScj2b2ZH2SKMyr6FCwwrMk-jblrtCCySUv3Il8_u3893Rt24w/viewform" id="js-request-student" target="_blank" rel="noopener noreferrer">
       <p class="requestLink__text -student">申し込む<br>(門下生)</p>
     </a>
   </div>
 </div>
+<!-- 申し込みリンクここまで -->
 
   <div class="Timer__wrap">
   <div class="inner">
@@ -53,8 +55,8 @@ get_header(); ?>
     <div class="requestInner__line">
   <p class="requestText">EBRに申し込む</p>
   <div class="requestButton__flex">
-  <a class="requestButton -guest" href="https://forms.gle/PXEnGuvDbKvfGPa69" target="_blank" rel="noopener noreferrer">ゲストの方はこちら</a>
-  <a class="requestButton -student" href="https://forms.gle/PXEnGuvDbKvfGPa69" target="_blank" rel="noopener noreferrer">門下生はこちら</a>
+  <a class="requestButton -guest" href="https://docs.google.com/forms/d/e/1FAIpQLSeN66tRCIuVy8_pssjk8pJMNnZeN5tHjHtCJwJsNybvOeVeBw/viewform" target="_blank" rel="noopener noreferrer">ゲストの方はこちら</a>
+  <a class="requestButton -student" href="https://docs.google.com/forms/d/e/1FAIpQLScj2b2ZH2SKMyr6FCwwrMk-jblrtCCySUv3Il8_u3893Rt24w/viewform" target="_blank" rel="noopener noreferrer">門下生はこちら</a>
   </div>
   </div>
   </div>
@@ -161,8 +163,8 @@ get_header(); ?>
     <div class="requestInner__line">
   <p class="requestText -about">EBRに申し込む</p>
   <div class="requestButton__flex -about">
-  <a class="requestButton -guest" href="https://forms.gle/PXEnGuvDbKvfGPa69" target="_blank" rel="noopener noreferrer">ゲストの方はこちら</a>
-  <a class="requestButton -student" href="https://forms.gle/PXEnGuvDbKvfGPa69" target="_blank" rel="noopener noreferrer">門下生はこちら</a>
+  <a class="requestButton -guest" href="https://docs.google.com/forms/d/e/1FAIpQLSeN66tRCIuVy8_pssjk8pJMNnZeN5tHjHtCJwJsNybvOeVeBw/viewform" target="_blank" rel="noopener noreferrer">ゲストの方はこちら</a>
+  <a class="requestButton -student" href="https://docs.google.com/forms/d/e/1FAIpQLScj2b2ZH2SKMyr6FCwwrMk-jblrtCCySUv3Il8_u3893Rt24w/viewform" target="_blank" rel="noopener noreferrer">門下生はこちら</a>
   </div>
   </div>
   </div>
@@ -371,7 +373,7 @@ else :
 <p>ギャラリー写真はありません</p>
 <?php endif; ?>
   </div>
-  <a class="galleryImg__link" href="<?php echo esc_url(home_url('/gallery')) ?>">写真をもっと見る</a>
+  <a class="galleryImg__link" href="<?php echo esc_url(home_url('/gallerylist')) ?>">写真をもっと見る</a>
 
   <!-- モーダル -->
   <div class="modal" id="imageModal" >

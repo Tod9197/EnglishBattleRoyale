@@ -139,6 +139,7 @@
   background-image: url(../img/bg04.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  z-index: 4000;
 }
 .hamburgerNav.active {
   display: block;
