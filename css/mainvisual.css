@@ -81,15 +81,28 @@
   animation-fill-mode: forwards;
 }
 
-/* ギャラリー一覧ページメインビジュアル */
+/* 投稿・画像一覧・協賛.競技一覧ページメインビジュアル */
+.mainVisual.-topics {
+  height: 90vh;
+  background-image: url(../img/ebr2023-32.jpg);
+}
 .mainVisual.-gallery {
   height: 90vh;
-  background-image: url(../img/ebr2023-25.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-image: url(../img/ebr2023-28.jpg);
 }
-.mainVisual.-gallery::after {
+.mainVisual.-sponsors {
+  height: 90vh;
+  background-image: url(../img/ebr2023-25.jpg);
+}
+.mainVisual.-contest {
+  height: 90vh;
+  background-image: url(../img/ebr2023-30.jpg);
+}
+
+.mainVisual.-gallery::after,
+.mainVisual.-sponsors::after,
+.mainVisual.-contest::after,
+.mainVisual.-topics::after {
   content: "";
   position: absolute;
   top: 0;
@@ -98,7 +111,10 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
 }
-.mainVisual__title.-gallery {
+.mainVisual__title.-gallery,
+.mainVisual__title.-sponsors,
+.mainVisual__title.-contest,
+.mainVisual__title.-topics {
   font-size: 9rem;
   text-transform: uppercase;
   animation: unset;
@@ -113,7 +129,34 @@
   opacity: 1;
   animation: unset;
 }
-.mainVisual__title.-gallery::after {
+.mainVisual__title.-sponsors::before {
+  display: block;
+  content: "協賛一覧";
+  font-size: 3rem;
+  bottom: -6rem;
+  opacity: 1;
+  animation: unset;
+}
+.mainVisual__title.-topics::before {
+  display: block;
+  content: "お知らせ";
+  font-size: 3rem;
+  bottom: -6rem;
+  opacity: 1;
+  animation: unset;
+}
+.mainVisual__title.-contest::before {
+  display: block;
+  content: "競技種目一覧";
+  font-size: 3rem;
+  bottom: -6rem;
+  opacity: 1;
+  animation: unset;
+}
+.mainVisual__title.-gallery::after,
+.mainVisual__title.-sponsors::after,
+.mainVisual__title.-contest::after,
+.mainVisual__title.-topics::after {
   display: none;
 }
 
@@ -130,14 +173,23 @@
   .mainVisual__title::after {
     right: 25%;
   }
-  .mainVisual__title.-gallery {
+  .mainVisual__title.-gallery,
+  .mainVisual__title.-sponsors,
+  .mainVisual__title.-contest,
+  .mainVisual__title.-topics {
     font-size: 8rem;
   }
-  .mainVisual__title.-gallery::before {
+  .mainVisual__title.-gallery::before,
+  .mainVisual__title.-sponsors::before,
+  .mainVisual__title.-contest::before,
+  .mainVisual__title.-topics::before {
     font-size: 2.8rem;
     bottom: -5rem;
   }
-  .mainVisual.-gallery {
+  .mainVisual.-gallery,
+  .mainVisual.-sponsors,
+  .mainVisual.-contest,
+  .mainVisual.-topics {
     height: 80vh;
   }
 }
@@ -159,10 +211,16 @@
     font-size: 1.6rem;
     right: 17%;
   }
-  .mainVisual__title.-gallery {
+  .mainVisual__title.-gallery,
+  .mainVisual__title.-sponsors,
+  .mainVisual__title.-contest,
+  .mainVisual__title.-topics {
     font-size: 7rem;
   }
-  .mainVisual__title.-gallery::before {
+  .mainVisual__title.-gallery::before,
+  .mainVisual__title.-sponsors::before,
+  .mainVisual__title.-contest::before,
+  .mainVisual__title.-topics::before {
     font-size: 2.4rem;
     bottom: -4rem;
   }
@@ -185,13 +243,22 @@
     font-size: 1.4rem;
     right: 10%;
   }
-  .mainVisual.-gallery {
+  .mainVisual.-gallery,
+  .mainVisual.-sponsors,
+  .mainVisual.-contest,
+  .mainVisual.-topics {
     height: 70vh;
   }
-  .mainVisual__title.-gallery {
+  .mainVisual__title.-gallery,
+  .mainVisual__title.-sponsors,
+  .mainVisual__title.-contest,
+  .mainVisual__title.-topics {
     font-size: 4.5rem;
   }
-  .mainVisual__title.-gallery::before {
+  .mainVisual__title.-gallery::before,
+  .mainVisual__title.-sponsors::before,
+  .mainVisual__title.-contest::before,
+  .mainVisual__title.-topics::before {
     font-size: 1.8rem;
     bottom: -3rem;
   }

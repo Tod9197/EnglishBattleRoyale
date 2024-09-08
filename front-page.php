@@ -4,8 +4,6 @@
  * * Template Name: トップページ
  * @package WordPress
  * @Template Post Type: post, page,
- * @subpackage I'LL
- * @since I'LL 1.0
  */
 get_header(); ?>
 
@@ -16,7 +14,6 @@ get_header(); ?>
 
 <!-- タイマー -->
 <section class="Timer">
-
 <!-- 申し込みリンク -->
 <div class="requestLink">
   <div class="requestLink__flex">
@@ -27,6 +24,7 @@ get_header(); ?>
       <p class="requestLink__text -student">(門下生)<br>申し込む</p>
     </a>
   </div>
+  <a href="#" class="backToTop__button" id="backToTop">↑</a>
 </div>
 
 <div class="requestLink -mobile">
@@ -39,13 +37,14 @@ get_header(); ?>
       <p class="requestLink__text -student">申し込む<br>(門下生)</p>
     </a>
   </div>
+  <a href="#" class="backToTop__button -mobile" id="backToTop">↑</a>
 </div>
 <!-- 申し込みリンクここまで -->
 
   <div class="Timer__wrap">
-  <div class="inner">
-  <h2 class="Timer__title"><span>火花散る！！<br class="Timer__title__spOnly">度肝抜かれる</span><br>決戦まで</h2>
-  <div class="Timer__section">
+  <div class="inner">  
+    <h2 class="Timer__title"><span>火花散る！！<br class="Timer__title__spOnly">度肝抜かれる</span><br>決戦まで</h2>
+    <div class="Timer__section">
     あと<span class="Timer__text" id="timer-day"></span>日
     <span class="Timer__text" id="timer-hours"></span>時間
     <span class="Timer__text" id="timer-min"></span>分
@@ -58,7 +57,7 @@ get_header(); ?>
   <a class="requestButton -guest" href="https://docs.google.com/forms/d/e/1FAIpQLSeN66tRCIuVy8_pssjk8pJMNnZeN5tHjHtCJwJsNybvOeVeBw/viewform" target="_blank" rel="noopener noreferrer">ゲストの方はこちら</a>
   <a class="requestButton -student" href="https://docs.google.com/forms/d/e/1FAIpQLScj2b2ZH2SKMyr6FCwwrMk-jblrtCCySUv3Il8_u3893Rt24w/viewform" target="_blank" rel="noopener noreferrer">門下生はこちら</a>
   </div>
-  </div>
+  </div> 
   </div>
   </div>
   </div>
@@ -74,7 +73,7 @@ get_header(); ?>
       <div class="aboutFlex -first">
       <div class="aboutContents -first">
       <p class="aboutText">東京・京都(比叡平)に本拠を置く唯一無二の英語道場<br class="pc-only">「升砲館」 <br>
-      師匠であるShawnの教えのもと今までに多くの<br class="pc-only">「英語の達人」を生み出してきました。</p>
+      師匠である館長Shawnの教えのもと今までに多くの<br class="pc-only">「英語の達人」を生み出してきました。</p>
       <p class="aboutText">升砲館門下生の英語を聞いた人は皆<br>
     「え！?あの人英語上手くない！？」<br class="sp-only02">と息巻きます。</p>
     <p  class="aboutText">そんな英語の達人たちが年に1度日頃の稽古の成果を披露する場</p>
@@ -158,6 +157,7 @@ get_header(); ?>
         <img src="<?php echo esc_url(get_theme_file_uri('/img/ebr2023-20.jpg')); ?>" alt="パーティー画像3">
       </li>
     </ul>
+    <p class="aboutPrice">【参加費】<br>コンテスト＆パーティ：18,000円 前後</p>
   </div>
   <div class="requestWrap -about">
     <div class="requestInner__line">
@@ -223,7 +223,7 @@ get_header(); ?>
     <p class="showDown__text -second">対して僅かの差で優勝を逃した<br><mark>Team H. Blacks</mark><br>
     このまま黙っていられない！<br>
     リーダーKirkを中心に想いは一つ。<br>
-    昨年の悔しさをバネに今年こそはとリベンジを誓う。<br>
+    昨年の悔しさをバネに<br class="sp-only02">今年こそはとリベンジを誓う。<br>
     持ち前の腹黒さで虎視眈々と優勝を狙う。<br>
     1年間の稽古の成果を発揮し<br>
     見事王座奪還となるか！？
@@ -234,41 +234,6 @@ get_header(); ?>
   </div>
 </section>
 
-<!-- インタビュー -->
-<!-- <section class="frontInterview" id="interview">
-  <div class="inner">
-    <h2 class="interviewTitle" data-en="インタビュー">Interview</h2>
-    <p class="interviewTitle__text">両チームリーダーのEBRにかける意気込み</p>
-  <div class="frontInterview__flex">
-    <div class="frontInterview__container">
-  <div class="frontInterview__img">
-    <img src="<?php echo esc_url(get_theme_file_uri('/img/man01.jpg')) ?>" alt="Interview Image" class="frontInterview__imgElement">
-    <div class="imgDark">
-      <p class="frontInterview__imgText">Hi everyone!<br>I am Kirk</p>
-      <p class="frontInterview__title">みんな！今年は優勝するぞー！</p>
-    </div>
-  </div>
-  </div>
-
-  <div class="frontInterview__container">
-    <a href="<?php echo esc_url(home_url('/interview-sherry')) ?>">
-  <div class="frontInterview__img -second">
-    <img src="<?php echo esc_url(get_theme_file_uri('/img/lady01.jpg')) ?>" alt="Interview Image" class="frontInterview__imgElement -second">
-    <div class="imgDark">
-        <p class="frontInterview__imgText -second">Hi everyone!<br>I am Sherry</p>
-        <p class="frontInterview__title">ぶっ放す！！！</p>
-        <p class="frontInterview__button">もっと見る</p>
-    </div>
-    </a>
-  </div>
-  </div>
-    
-    </div>
-  </div>
-  </div>
-</section> -->
-
-
 <!-- 当日のスケジュール -->
 <section class="timeTable" id="timetable">
   <div class="inner">
@@ -277,18 +242,18 @@ get_header(); ?>
     <div class="timeTable__outline">
       <div class="timeTable__inline">
          <h2 class="timeTableTitle" data-en="当日の流れ">TIME TABLE</h2>
-         <p class="timeTable__subTitle">当日の流れ</p>
+         <p class="timeTable__subTitle">当日の流れ(仮)</p>
          <ul class="timeTable__list">
           <li class="timeTable__listItem">15:00 開場</li>
           <li class="timeTable__listItem">15:10 開会の挨拶</li>
-          <li class="timeTable__listItem">15:30 競技種目①(個人)<span>引用文の音読</span></span></li>
-          <li class="timeTable__listItem">16:30 競技種目②(個人)<span>Delivery = ぶっ放す</span></span></li>
-          <li class="timeTable__listItem">16:30 競技種目③(団体)<span>音節分化即時対応</span></span></li>
+          <li class="timeTable__listItem">15:20 競技種目①(個人)<span>引用文の音読</span></span></li>
+          <li class="timeTable__listItem">15:40 競技種目②(個人)<span>Delivery = ぶっ放す</span></span></li>
+          <li class="timeTable__listItem">16:00 競技種目③(団体)<span>音節分化即時対応</span></span></li>
           <li class="timeTable__listItem">休憩</li>
-          <li class="timeTable__listItem">18:00 競技種目④(団体)<span>チーム対抗歌合戦</span></span></li>
-          <li class="timeTable__listItem">18:30 競技種目⑤(個人)<span>アテレコ</span></spaN></li>
-          <li class="timeTable__listItem">19:00 競技種目⑥(個人)<span>ビデオレター</span></spaN></li>
-          <li class="timeTable__listItem">19:30 〜<span>パーティー</span></spaN></li>
+          <li class="timeTable__listItem">16:40 競技種目④(団体)<span>チーム対抗歌合戦</span></span></li>
+          <li class="timeTable__listItem">17:00 競技種目⑤(個人)<span>アテレコ</span></spaN></li>
+          <li class="timeTable__listItem">17:15 競技種目⑥(個人)<span>ビデオレター</span></spaN></li>
+          <li class="timeTable__listItem">18:30 〜 21:00<span>パーティー</span></spaN></li>
          </ul>
 
         <!-- 詳細ページリンク -->
@@ -306,10 +271,12 @@ get_header(); ?>
 <section class="topics" id="topics">
 
 <?php  
+$paged = (get_query_var('paged')) ? get_query_var('paged') : (get_query_var('page') ? get_query_var('page') : 1);
 $args = [
   'page_type' => 'post',
-  'posts_per_page' => 4,
-  'order' => 'DESC'
+  'posts_per_page' => 3,
+  'order' => 'DESC',
+  'paged' => $paged
 ];
 $the_query = new WP_Query($args);
 ?>
@@ -325,16 +292,51 @@ $the_query = new WP_Query($args);
     <a class="topicsPost__listLink" href="<?php the_permalink(); ?>">
     <?php if(has_post_thumbnail()) : ?>
       <?php the_post_thumbnail('thumbnail',['class' => 'topicsPost__img']) ?>
+    <?php else: ?>
+        <img class="topicsPost__img" src="<?php echo esc_url(get_template_directory_uri()); ?>/img/ebr2023-33.png" alt="代替画像">
     <?php endif; ?>
+    <div class="topicsPost__wrap">
     <div class="topicsPost__flex">
       <div class="topicsPost__date"><?php echo get_the_date('Y.m.d') ?></div>
-      <div class="topicsPost__title"><?php the_title(); ?></div>
+      <?php  
+        $custom_author = get_post_meta(get_the_ID(), 'custom_author_name',true);
+        if($custom_author) : 
+        ?>
+        <div class="topicsPost__author">投稿者: <?php echo esc_html($custom_author); ?></div>
+        <?php else : ?>
+        <div class="topicsPost__author">投稿者: <?php the_author(); ?></div>
+        <?php endif; ?>
+      </div>
+      <div class="topicsPost__title">
+        <?php $title = get_the_title(); 
+        if(mb_strlen($title) > 27){
+          echo mb_strimwidth($title,0,40,'...');
+        } else {
+          echo esc_html($title);
+        }
+        ?>
+      </div>
       </div>
     </a>
     </li>
     <?php endwhile; ?>
     <?php wp_reset_postdata(); ?>
     </ul>
+
+    <!-- ページネーション -->
+    <div class="galleryArchive__pagination">
+      <?php  
+      echo paginate_links(array(
+        'total' => $the_query ->max_num_pages,
+        'current' => max(1,get_query_var('paged')),
+        'prev_text' => __('←'),
+        'next_text' => __('→'),
+      ));
+      ?>
+    </div>
+
+    <?php else: ?>
+      <p class="topicsPost__noPost">まだ投稿はありません。</p>
   <?php endif; ?>
   </div>
 </section>
@@ -392,22 +394,9 @@ else :
     <h2 class="accessTitle">ACCESS</h2>
     <div class="accessSubTitle">開催場所</div>
     <h3 class="accessText">Coming Soon(東京都内予定)</h3>
-    <!-- <div class="accessImage__wrap">
-      <img class="accessImage -first" src="<?php echo esc_url(get_theme_file_uri('/img/grace01.jpg')) ?>" alt="開催場所画像1">
-      <img class="accessImage -firstShadow" src="<?php echo esc_url(get_theme_file_uri('/img/grace01.jpg')) ?>" alt="開催場所画像1">
-      <img class="accessImage -second" src="<?php echo esc_url(get_theme_file_uri('/img/grace02.jpg')) ?>" alt="開催場所画像2">
-      <img class="accessImage -secondShadow" src="<?php echo esc_url(get_theme_file_uri('/img/grace02.jpg')) ?>" alt="開催場所画像2">
-    </div> -->
     <div class="accessMap">
-    <iframe class="accessMap_google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.5029226342294!2d139.70695837543224!3d35.66461667259268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188ca04352d389%3A0xa1e1b2faef4fa15e!2z6Z2S5bGxIOOCu-ODs-ODiOOCsOODrOODvOOCueWkp-iBluWggg!5e0!3m2!1sja!2sjp!4v1717992624529!5m2!1sja!2sjp" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <!-- <iframe class="accessMap_google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.5029226342294!2d139.70695837543224!3d35.66461667259268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188ca04352d389%3A0xa1e1b2faef4fa15e!2z6Z2S5bGxIOOCu-ODs-ODiOOCsOODrOODvOOCueWkp-iBluWggg!5e0!3m2!1sja!2sjp!4v1717992624529!5m2!1sja!2sjp" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
     </div>
-    <!-- <address class="accessAddress">
-      〒107-0061<br class="sp-only"> 東京都港区北青山３丁目９−１４
-    </address>
-    <a class="accessNumber" href="tel:03-5766-8838">TEL : <span>03-5766-8838</span></a>
-    <ul class="accessInfo__list">
-      <li class="accessInfo__listItem">東京メトロ<span>「表参道駅」</span>徒歩4分</li>
-    </ul> -->
   </div>
 </section>
 

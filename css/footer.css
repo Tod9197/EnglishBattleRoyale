@@ -4,17 +4,24 @@
   padding: 5rem 0 15rem;
   background-color: #000;
   box-sizing: border-box;
+  position: relative;
 }
 .footerFlex {
   display: flex;
   justify-content: space-between;
-  /* align-items: center; */
 }
-@media (max-width: 768px) {
-  .footerFlex {
-    flex-direction: column;
-  }
+.footer__copyRight {
+  display: block;
+  width: 100%;
+  font-size: 1.4rem;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 0.1em;
+  position: absolute;
+  bottom: 2rem;
+  left: 0;
 }
+
 .footer__logo {
   font-family: cursive;
   font-size: 5rem;
@@ -28,40 +35,19 @@
   color: transparent;
   line-height: 1;
 }
-@media (max-width: 768px) {
-  .footer__logo {
-    font-size: 4rem;
-    margin: auto;
-    margin-bottom: 5rem;
-  }
-}
 
 .footerList {
   display: flex;
   justify-content: space-between;
   overflow: auto;
 }
-@media (max-width: 480px) {
-  .footerList {
-    flex-direction: column;
-  }
-}
+
 .footerList__item {
   margin-right: 5rem;
 }
-@media (max-width: 480px) {
-  .footerList__item {
-    width: 100%;
-  }
-}
+
 .footerList__item:last-child {
   margin-right: 0;
-}
-@media (max-width: 768px) {
-  .footerList__item {
-    width: 100%;
-    margin-right: 0;
-  }
 }
 
 .footerList__itemTitle {
@@ -77,14 +63,6 @@
 .footerList__itemTitle.-interview,
 .footerList__itemTitle.-sponsors {
   margin-top: 5rem;
-}
-@media (max-width: 768px) {
-  .footerList__itemTitle.-gallery,
-  .footerList__itemTitle.-contest,
-  .footerList__itemTitle.-interview,
-  .footerList__itemTitle.-sponsors {
-    margin-top: 2rem;
-  }
 }
 
 .footerList__item a {
@@ -104,7 +82,33 @@
   background-clip: text;
   color: transparent;
 }
+@media (max-width: 1024px) {
+  .footerList__item {
+    margin-right: 4rem;
+  }
+}
 @media (max-width: 768px) {
+  .footerFlex {
+    flex-direction: column;
+  }
+  .footer__logo {
+    font-size: 4rem;
+    margin: auto;
+    margin-bottom: 5rem;
+  }
+  .footer__copyRight {
+    font-size: 1.2rem;
+  }
+  .footerList__item {
+    width: 100%;
+    margin-right: 2rem;
+  }
+  .footerList__itemTitle.-gallery,
+  .footerList__itemTitle.-contest,
+  .footerList__itemTitle.-interview,
+  .footerList__itemTitle.-sponsors {
+    margin-top: 2rem;
+  }
   .footerList__itemTitle {
     font-size: 1.6rem;
   }
@@ -120,6 +124,12 @@
   .footer__logo {
     font-size: 3rem;
   }
+  .footerList {
+    flex-direction: column;
+  }
+  .footerList__item {
+    width: 100%;
+  }
   .footerList__itemTitle {
     display: contents;
     font-size: 2.2rem;
@@ -131,5 +141,8 @@
     width: 100%;
     margin-top: 1rem;
     margin-bottom: 3rem;
+  }
+  .footer__copyRight {
+    bottom: 8rem;
   }
 }

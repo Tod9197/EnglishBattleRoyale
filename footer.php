@@ -6,8 +6,10 @@
       <li class="footerList__item">
         <p class="footerList__itemTitle">ABOUT</p>  
         <a href="<?php echo esc_url(home_url('/#about')); ?>">EBRについて</a>
-        <p class="footerList__itemTitle -interview">INTERVIEW</p>
-        <a href="#interview">インタビュー</a>
+        <p class="footerList__itemTitle -interview">SHOHOKAN WEBSITE</p>
+        <a href="https://shohokan.net/" target="_blank" rel="noopener noreferrer">英語道場 升砲館 公式ウェブサイト</a>
+        <!-- <p class="footerList__itemTitle -interview">INTERVIEW</p>
+        <a href="#interview">インタビュー</a> -->
       </li>
       <li class="footerList__item">
         <p class="footerList__itemTitle">ACCESS</p>
@@ -30,6 +32,9 @@
       
     </ul>
     </div>
+
+    <p class="footer__copyRight">&copy;<?php echo date('Y'); ?> EBR実行員会
+    All rights reserved.</p>
   </div>
 </footer>
 

@@ -22,6 +22,7 @@ get_header();
       <p class="requestLink__text -student">(門下生)<br>申し込む</p>
     </a>
   </div>
+  <a href="#" class="backToTop__button" id="backToTop">↑</a>
 </div>
 
 <div class="requestLink -mobile">
@@ -33,6 +34,7 @@ get_header();
       <p class="requestLink__text -student">申し込む<br>(門下生)</p>
     </a>
   </div>
+  <a href="#" class="backToTop__button -mobile" id="backToTop">↑</a>
 </div>
 <!-- 申し込みリンクここまで -->
 
@@ -44,7 +46,7 @@ get_header();
       $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
       $args = array(
         'post_type' => 'gallery',
-        'posts_per_page' => 8,
+        'posts_per_page' => 12,
         'category_name' => 'ebr2023',
         'paged' => $paged
       );

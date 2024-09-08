@@ -1,0 +1,114 @@
+.singleTopics {
+  padding: 5rem 0 5rem;
+}
+.singleTopics__wrap {
+  margin: auto;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+  border: 2px solid #ffd700;
+  padding: 1rem;
+}
+.singleTopics__line {
+  padding: 7rem 2rem;
+  border: 2px solid #eee;
+}
+.singleTopics__title {
+  font-size: 2.8rem;
+  font-weight: bold;
+  text-align: left;
+  letter-spacing: 0.1em;
+  margin-bottom: 3rem;
+}
+.singleTopics__flex {
+  display: flex;
+  margin-bottom: 3rem;
+}
+.singleTopics__author {
+  color: #333;
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+}
+.singleTopics__date {
+  color: #333;
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 0;
+  margin-left: 5rem;
+}
+.singleTopics__img {
+  width: 100%;
+  max-width: 1100px;
+  height: auto;
+  margin-bottom: 3rem;
+}
+.singleTopics__img img {
+  max-height: 500px;
+  object-fit: cover;
+  aspect-ratio: 1000/500;
+}
+.singleTopics__content {
+  font-family: "MS Mincho", serif;
+  font-size: 2rem;
+  font-weight: 400;
+  text-wrap: wrap;
+  letter-spacing: 0.2em;
+  line-height: 1.8;
+}
+.singleTopics__content p {
+  margin-bottom: 1rem;
+}
+@media (max-width: 1024px) {
+  .singleTopics {
+    padding: 0;
+  }
+}
+@media (max-width: 768px) {
+  .singleTopics__flex {
+    margin-bottom: 2rem;
+  }
+  .singleTopics__title {
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+  }
+  .singleTopics__author,
+  .singleTopics__date {
+    font-size: 1.8rem;
+  }
+  .singleTopics__img img {
+    max-height: 350px;
+  }
+  .singleTopics__content {
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 480px) {
+  .singleTopics__wrap {
+    margin-top: 7rem;
+  }
+  .singleTopics__line {
+    padding: 5rem 1rem;
+  }
+  .singleTopics__flex {
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
+  .singleTopics__author {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+  }
+  .singleTopics__date {
+    font-size: 1.6rem;
+    margin-left: 0;
+  }
+  .singleTopics__title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  .singleTopics__img img {
+    max-height: 250px;
+  }
+  .singleTopics__content {
+    font-size: 1.4rem;
+  }
+}

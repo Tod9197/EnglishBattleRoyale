@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="<?php echo esc_url(get_theme_file_uri('/css/footer.css')); ?>" type="text/css">
   <link rel="stylesheet" href="<?php echo esc_url(get_theme_file_uri('/css/gallery.css')); ?>" type="text/css">
   <link rel="stylesheet" href="<?php echo esc_url(get_theme_file_uri('/css/sponsors.css')); ?>" type="text/css">
+  <link rel="stylesheet" href="<?php echo esc_url(get_theme_file_uri('/css/topics.css')); ?>" type="text/css">
 </head>
 
 <body>
@@ -30,7 +31,7 @@
           
           <li class="header__listItem"><a href="<?php echo esc_url(home_url('/gallerylist')); ?>">gallery</a></li>
           <li class="header__listItem"><a href="<?php echo esc_url(home_url('/#access')); ?>">access</a></li>
-          <li class="header__listItem"><a href="/">contact</a></li>
+          <li class="header__listItem"><a href="<?php echo esc_url(home_url('/sponsors')); ?>">sponsors</a></li>
         </ul>
         </div>
         <a class="header__logo" href="/">EBR</a>
@@ -51,16 +52,16 @@
             <a class="hamburgerNav__listItem__link" href="<?php echo esc_url(home_url('/#topics')); ?>" data-before="トピック">topics</a>
           </li>
           <li class="hamburgerNav__listItem">
-            <a class="hamburgerNav__listItem__link" href="<?php echo esc_url(home_url('/#timetable')); ?>" data-before="当日の流れ">timetable</a>
+            <a class="hamburgerNav__listItem__link" href="<?php echo esc_url(home_url('/#timetable')); ?>" data-before="当日の流れ">time table</a>
           </li>
           <li class="hamburgerNav__listItem">
-            <a class="hamburgerNav__listItem__link" href="<?php echo esc_url(home_url('/gallery')); ?>" data-before="過去開催の画像">gallery</a>
+            <a class="hamburgerNav__listItem__link" href="<?php echo esc_url(home_url('/gallerylist')); ?>" data-before="過去開催の画像">gallery</a>
           </li>
           <li class="hamburgerNav__listItem">
             <a class="hamburgerNav__listItem__link" href="<?php echo esc_url(home_url('/#access')); ?>" data-before="開催場所">access</a>
           </li>
           <li class="hamburgerNav__listItem">
-            <a class="hamburgerNav__listItem__link" href="/" data-before="お問い合わせ">contact</a>
+            <a class="hamburgerNav__listItem__link" href="<?php echo esc_url(home_url('/sponsors')); ?>" data-before="協賛">sponsors</a>
           </li>
         </ul>
       </nav>

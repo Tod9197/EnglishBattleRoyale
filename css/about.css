@@ -197,7 +197,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
-  margin-bottom: 10rem;
+  margin-bottom: 5rem;
 }
 .aboutPictures__listItem:nth-child(2) {
   margin-top: 15rem;
@@ -220,6 +220,14 @@
   object-fit: cover;
   border-radius: 50%;
   box-shadow: 10px 10px 10px skyblue;
+}
+.aboutPrice {
+  font-family: "MS Mincho", serif;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 0.1em;
+  line-height: 1.8;
 }
 @media (max-width: 1024px) {
   .about {
@@ -262,6 +270,9 @@
   .aboutPictures__listItem img {
     width: 28rem;
     height: 28rem;
+  }
+  .aboutPrice {
+    font-size: 2.8rem;
   }
 }
 @media (max-width: 768px) {
@@ -312,8 +323,12 @@
     margin-right: 0;
   }
   .aboutPictures__listItem img {
-    width: 20rem;
-    height: 20rem;
+    width: 16rem;
+    height: 16rem;
+  }
+  .aboutPrice {
+    font-size: 2.2rem;
+    letter-spacing: 0.05em;
   }
 }
 @media (max-width: 700px) {
@@ -324,7 +339,7 @@
 
 @media (max-width: 480px) {
   .about {
-    padding: 10rem 0 10rem 0;
+    padding: 7rem 0 3rem 0;
   }
   .aboutTitle {
     font-size: 4rem;
@@ -402,5 +417,8 @@
   }
   .aboutPictures__listItem:nth-child(6) {
     margin-top: 8rem;
+  }
+  .aboutPrice {
+    font-size: 1.6rem;
   }
 }

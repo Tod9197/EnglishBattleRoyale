@@ -53,6 +53,31 @@ img {
   width: 100%;
   max-width: 100%;
 }
+.backToTop__button {
+  width: 2rem;
+  height: 2rem;
+  font-size: 1.8rem;
+  color: #fff;
+  background: #077dff;
+  font-weight: bold;
+  border: 1px solid #eee;
+  border-radius: 50%;
+  position: absolute;
+  right: 0.1rem;
+  padding: 2rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+.backToTop__button:hover {
+  opacity: 0.8;
+}
+.backToTop__button.-mobile {
+  left: 50%;
+  bottom: 3rem;
+  transform: translateX(-50%);
+  color: #000;
+  background-color: #ddd;
+}
 
 /* レスポンシブ */
 @media (max-width: 1024px) {
@@ -75,7 +100,7 @@ img {
 /* 申し込みボタン */
 .requestWrap {
   margin: auto;
-  margin-top: 15rem;
+  margin-top: 10rem;
   margin-bottom: 10rem;
   border: 2px solid #ffd700;
   padding: 1rem;
@@ -225,7 +250,7 @@ img {
     font-size: 1.2rem;
   }
   .requestWrap {
-    margin-top: 10rem;
+    margin-top: 7rem;
     margin-bottom: 5rem;
   }
   .requestText {
@@ -238,16 +263,24 @@ img {
   .requestButton {
     font-size: 2.4rem;
   }
+  .backToTop__button {
+    width: 2rem;
+    height: 2rem;
+    padding-bottom: 2.5rem;
+  }
 }
 @media (max-width: 768px) {
   .requestLink__text {
     font-size: 1rem;
     padding: 3rem 0.5rem;
   }
-  .requestText,
-  .requestText.-about {
+  .requestText {
     font-size: 3.2rem;
     top: -5rem;
+  }
+  .requestText.-about {
+    font-size: 3.2rem;
+    top: 0;
   }
   .requestButton__flex {
     flex-direction: column;
@@ -262,6 +295,13 @@ img {
   }
   .requestButton.-student {
     margin: 0 auto 2rem;
+  }
+  .backToTop__button {
+    width: 1.2rem;
+    height: 1.2rem;
+    font-size: 1.2rem;
+    padding: 1.5rem;
+    padding-bottom: 1.8rem;
   }
 }
 @media (max-width: 480px) {
@@ -336,7 +376,7 @@ img {
   letter-spacing: 0.1em;
   border: 2px solid #ffd700;
   margin: auto;
-  margin-top: 10rem;
+  margin-top: 5rem;
   margin-bottom: 7rem;
   overflow: hidden;
   z-index: 20000;
@@ -1033,9 +1073,9 @@ img {
 }
 
 .showDown__DescriptionImg.-second {
-  width: 50rem;
-  height: 60rem;
-  background-image: url(../img/kirk01.png);
+  width: 45rem;
+  height: 50rem;
+  background-image: url(../img/kirk04.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -1215,6 +1255,27 @@ img {
   border-radius: 50%;
   z-index: -1;
 }
+.showDown__textLeft::after {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  content: "今年は勝つ!!!";
+  font-size: 2.4rem;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 0.1em;
+  position: absolute;
+  width: 20rem;
+  height: 20rem;
+  padding: 2rem;
+  top: -12rem;
+  right: 0rem;
+  bottom: 1.5rem;
+  color: #fff;
+  background-color: #077dff;
+  border-radius: 50%;
+  z-index: -1;
+}
 
 .showDown__text {
   font-family: "MS Mincho", serif;
@@ -1276,6 +1337,10 @@ img {
     width: 30rem;
     height: 30rem;
   }
+  .showDown__DescriptionImg.-second {
+    width: 35rem;
+    height: 40rem;
+  }
   .showDown__textRight {
     margin-bottom: 15rem;
   }
@@ -1292,6 +1357,10 @@ img {
   }
   .showDown__textRight::after {
     font-size: 2rem;
+  }
+  .showDown__textLeft::after {
+    font-size: 2rem;
+    top: 40rem;
   }
 }
 @media (max-width: 768px) {
@@ -1331,6 +1400,11 @@ img {
     height: 18rem;
     font-size: 1.8rem;
   }
+  .showDown__textLeft::after {
+    width: 18rem;
+    height: 18rem;
+    font-size: 1.8rem;
+  }
   .showDown__text.-first {
     text-align: center;
   }
@@ -1345,11 +1419,16 @@ img {
     top: 4rem;
     left: 0;
   }
+  .showDown__DescriptionImg.-second {
+    width: 70%;
+    height: 35rem;
+    margin-left: auto;
+  }
 }
 
 @media (max-width: 480px) {
   .showDown__Description {
-    padding: 6rem 0 6rem;
+    padding: 6rem 0 0;
   }
   .showDown__title {
     font-size: 2.6rem;
@@ -1373,10 +1452,27 @@ img {
   .showDown__text.-second {
     font-size: 1.4rem;
     text-align: left;
+    overflow-wrap: break-word; /* 長い単語を改行する */
+    word-wrap: break-word; /* 古いブラウザ用 */
+    word-break: break-all;
   }
   .showDown__textLeft::before {
-    top: 28rem;
-    left: 5rem;
+    top: 5rem;
+    left: 7rem;
+  }
+  .showDown__textRight::after {
+    width: 15rem;
+    height: 15rem;
+  }
+  .showDown__textLeft::after {
+    width: 15rem;
+    height: 15rem;
+    left: 0;
+    top: 45rem;
+  }
+  .showDown__DescriptionImg.-second {
+    width: 75%;
+    height: 40rem;
   }
 }
 
@@ -1700,6 +1796,9 @@ img {
   .timeTable__list {
     width: 100%;
   }
+  .timeTable__listItem {
+    margin-bottom: 3rem;
+  }
   .timeTable__listItem span {
     display: block;
     font-size: 2.4rem;
@@ -1728,11 +1827,11 @@ img {
   }
   .timeTable__listItem {
     font-size: 1.6rem;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
   }
   .timeTable__listItem span {
     display: block;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     margin-left: 0;
   }
   .timeTable__listItem__link {
@@ -1797,35 +1896,54 @@ img {
   padding-bottom: 2rem;
   border-bottom: 2px dotted #333;
 }
-.topicsPost__flex {
-  display: flex;
-  flex-direction: column;
+.topicsPost__listLink:hover {
+  opacity: 0.8;
+}
+.topicsPost__wrap {
   margin-left: 2rem;
 }
+.topicsPost__flex {
+  display: flex;
+  margin-bottom: 3rem;
+}
 .topicsPost__date {
-  font-size: 2rem;
+  font-size: 2.2rem;
   color: #000;
-  margin-bottom: 1rem;
+  letter-spacing: 0.1em;
+}
+.topicsPost__author {
+  font-size: 2.2rem;
+  color: #000;
+  letter-spacing: 0.1em;
+  margin-left: 2rem;
 }
 .topicsPost__title {
-  font-size: 2.5rem;
+  font-size: 3rem;
   color: #000;
-}
-.topicsPost__title:hover {
-  color: #ff0000;
+  letter-spacing: 0.1em;
 }
 .topicsPost__img {
-  width: 15rem;
+  width: 20rem;
   height: auto;
   object-fit: cover;
   aspect-ratio: 150/120;
 }
+.topicsPost__noPost {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+
 @media (max-width: 1024px) {
   .topicsTitle {
     font-size: 6rem;
   }
   .topicsTitle::after {
     top: 7rem;
+  }
+  .topicsPost__noPost {
+    font-size: 2.8rem;
   }
 }
 @media (max-width: 768px) {
@@ -1835,10 +1953,30 @@ img {
   .topicsTitle::after {
     top: 6rem;
   }
+  .topicsPost__img {
+    width: 15rem;
+  }
+  .topicsPost__flex {
+    margin-bottom: 2rem;
+  }
+  .topicsPost__title {
+    font-size: 2.4rem;
+  }
+  .topicsPost__date,
+  .topicsPost__author {
+    font-size: 1.8rem;
+  }
+  .topicsPost__date {
+    margin-bottom: 0.5rem;
+  }
+
+  .topicsPost__noPost {
+    font-size: 2.4rem;
+  }
 }
 @media (max-width: 480px) {
   .topics {
-    padding: 10rem 0;
+    padding: 10rem 0 5rem;
   }
   .topicsTitle {
     font-size: 4rem;
@@ -1851,14 +1989,24 @@ img {
     margin-bottom: 7rem;
   }
   .topicsPost__img {
-    width: 13rem;
+    width: 10rem;
     aspect-ratio: 130/120;
   }
-  .topicsPost__date {
-    font-size: 1.6rem;
+  .topicsPost__flex {
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+  .topicsPost__date,
+  .topicsPost__author {
+    font-size: 1.4rem;
+    margin-left: 0;
+    margin-bottom: 0;
   }
   .topicsPost__title {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
+  }
+  .topicsPost__noPost {
+    font-size: 2rem;
   }
 }
 
@@ -2022,7 +2170,7 @@ img {
 }
 @media (max-width: 480px) {
   .gallery {
-    padding: 10rem 0;
+    padding: 10rem 0 5rem;
   }
   .galleryTitle {
     font-size: 4rem;
