@@ -1,7 +1,7 @@
 <footer class="footer">
   <div class="inner">
     <div class="footerFlex">
-    <a class="footer__logo" href="/">EBR</a>
+    <a class="footer__logo" href="<?php echo esc_url(home_url('/')); ?>">EBR</a>
     <ul class="footerList">
       <li class="footerList__item">
         <p class="footerList__itemTitle">ABOUT</p>  

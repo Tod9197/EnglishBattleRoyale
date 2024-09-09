@@ -34,7 +34,7 @@
           <li class="header__listItem"><a href="<?php echo esc_url(home_url('/sponsors')); ?>">sponsors</a></li>
         </ul>
         </div>
-        <a class="header__logo" href="/">EBR</a>
+        <a class="header__logo" href="<?php echo esc_url(home_url('/')); ?>">EBR</a>
 
         <!-- ハンバーガーメニュー -->
         <button class="hamburgerBtn" id="js-hamburger">

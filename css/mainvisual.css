@@ -236,7 +236,8 @@
     font-size: 5rem;
   }
   .mainVisual__title::before {
-    font-size: 5rem;
+    font-size: 4.5rem;
+    bottom: -6rem;
   }
   .mainVisual__title::after {
     width: 11rem;

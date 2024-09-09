@@ -63,6 +63,8 @@ get_header(); ?>
   </div>
 </section>
 
+
+
 <!-- About -->
 <section class="about" id="about">
   <div class="inner">
