@@ -337,21 +337,22 @@ img {
 
   .requestWrap {
     width: 100%;
+    padding: 0.5rem;
   }
   .requestWrap.-about {
     width: 100%;
   }
   .requestText {
-    font-size: 2.4rem;
-    top: -4.5rem;
+    font-size: 2rem;
+    top: -4rem;
     padding: 1rem 0.5rem 1rem 1rem;
   }
   .requestText.-about {
-    font-size: 2.4rem;
+    font-size: 2rem;
     top: 0;
   }
   .requestButton {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
   .requestLink__item.-guest:hover {
     transform: scaleX(1);
@@ -369,7 +370,6 @@ img {
   width: 50%;
   max-width: 30rem;
   font-size: 2rem;
-  font-weight: bold;
   display: block;
   padding: 2rem 5rem;
   letter-spacing: 0.1em;
@@ -408,6 +408,7 @@ img {
     margin-top: 3rem;
     margin-bottom: 4rem;
     padding: 1rem 4rem;
+    line-height: 1.7;
   }
 }
 
@@ -432,7 +433,7 @@ img {
   background-color: transparent; /* 背景色を透明に設定 */
   z-index: -1;
   white-space: nowrap;
-  animation: marquee 60s linear infinite;
+  animation: marquee 50s linear infinite;
 }
 .Timer::after {
   width: 100%;
@@ -449,7 +450,7 @@ img {
   background-color: transparent; /* 背景色を透明に設定 */
   z-index: -1;
   white-space: nowrap;
-  animation: marqueeRight 90s linear infinite;
+  animation: marqueeRight 80s linear infinite;
 }
 .Timer__wrap {
   position: relative;
@@ -617,13 +618,14 @@ img {
   display: block;
   content: "";
   width: 15%;
-  height: 2px;
+  height: 1px;
   left: 50%;
   transform: translateX(-50%);
   background-color: #ff0000;
   position: absolute;
 }
 .impression__subTitle {
+  font-family: "Sharp", serif;
   font-size: 2rem;
   text-align: center;
   color: #000;
@@ -776,7 +778,7 @@ img {
   }
   .impression__title {
     font-size: 3.5rem;
-    padding-bottom: 1.5rem;
+    padding-bottom: 1rem;
   }
   .impression__subTitle {
     font-size: 1.4rem;
@@ -812,7 +814,10 @@ img {
 }
 @media (max-width: 480px) {
   .impression__bg {
-    height: 109.7rem;
+    height: 109rem;
+  }
+  .impression__title::after {
+    width: 35%;
   }
   .impression__subTitle {
     margin-bottom: 10rem;
@@ -853,7 +858,7 @@ img {
   }
   .impressionWords__item.-ninth {
     top: 4rem;
-    right: 1rem;
+    right: 18rem;
   }
   .impressionWords__item.-tenth {
     top: 11rem;
@@ -862,18 +867,12 @@ img {
 }
 
 /* showDown */
-
 .showDown__bar {
   width: 100%;
   padding: 0;
   bottom: 0;
   box-sizing: border-box;
   z-index: 10000;
-  /* background-image: linear-gradient(
-    90deg,
-    rgba(0, 0, 0, 1),
-    rgba(85, 85, 85, 1)
-  ); */
   background-image: url(../img/thunder.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -1033,6 +1032,10 @@ img {
   .showDown__bar {
     padding: 3rem 0;
   }
+  .showDown__barWrap {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
   .showDown__barTitle.-first,
   .showDown__barTitle.-third {
     font-size: 5.5rem;
@@ -1063,7 +1066,7 @@ img {
   position: relative;
   overflow: hidden;
   white-space: nowrap;
-  background-image: url(../img/bg04.jpg);
+  /* background-image: url(../img/bg04.jpg); */
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -10;
@@ -1117,7 +1120,7 @@ img {
   color: #fff;
   top: 22rem;
   text-align: center;
-  -webkit-text-stroke: 2px #ddd; /* 文字の外側の線を黒に設定 */
+  -webkit-text-stroke: 1px #ddd; /* 文字の外側の線を黒に設定 */
   background-color: transparent; /* 背景色を透明に設定 */
   z-index: -1;
   white-space: nowrap;
@@ -1135,7 +1138,7 @@ img {
   bottom: 5rem;
   left: 0;
   text-align: center;
-  -webkit-text-stroke: 2px #ddd; /* 文字の外側の線を黒に設定 */
+  -webkit-text-stroke: 1px #ddd; /* 文字の外側の線を黒に設定 */
   background-color: transparent; /* 背景色を透明に設定 */
   z-index: -1;
   white-space: nowrap;
@@ -1468,8 +1471,11 @@ img {
     word-break: break-all;
   }
   .showDown__textLeft::before {
-    top: 5rem;
-    left: 7rem;
+    font-size: 1.8rem;
+    width: 18rem;
+    height: 18rem;
+    top: 7rem;
+    left: 6rem;
   }
   .showDown__textRight::after {
     width: 15rem;
@@ -1488,206 +1494,6 @@ img {
   .showDown__DescriptionImg.-second {
     width: 25rem;
     height: 40rem;
-  }
-}
-
-/* インタビュー */
-.frontInterview {
-  padding: 20rem 0 30rem;
-  background-image: url(../img/bg02.jpg);
-}
-.interviewTitle__flex {
-  display: flex;
-  align-items: center;
-  margin-bottom: 10rem;
-}
-.interviewTitle__text {
-  font-family: "Sharp", serif;
-  font-size: 2rem;
-  font-weight: bold;
-  color: #000;
-  text-align: center;
-  letter-spacing: 0.1em;
-  margin-bottom: 10rem;
-}
-
-.interviewTitle {
-  display: inline-block;
-  font-family: "Sharp", serif;
-  font-size: 7rem;
-  font-weight: bold;
-  color: #000;
-  padding: 1rem;
-  padding-bottom: 3rem;
-  text-align: center;
-  line-height: 1;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.interviewTitle::after {
-  display: block;
-  content: "";
-  width: 100%;
-  height: 1px;
-  top: 9rem;
-  background-color: #ff0000;
-  position: absolute;
-}
-
-.frontInterview__flex {
-  display: flex;
-  justify-content: space-between;
-}
-.frontInterview__namePart {
-  width: 50%;
-}
-.frontInterview__name {
-  font-family: "MS Mincho", serif;
-  font-weight: bold;
-  font-size: 3rem;
-  color: #333;
-}
-
-.frontInterview__container {
-  position: relative;
-  width: 50%;
-  max-width: 918px;
-  height: 40rem;
-  overflow: hidden; /* This will prevent the image from overflowing its container */
-}
-
-.frontInterview__img {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-.frontInterview__img.-second {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-
-.frontInterview__imgElement {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.5s ease; /* Smooth transition for the zoom effect */
-}
-.frontInterview__imgElement.-second {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.5s ease; /* Smooth transition for the zoom effect */
-}
-
-.imgDark {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Slight transparency */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white; /* Ensure text is visible */
-}
-
-.frontInterview__img:hover .frontInterview__imgElement {
-  transform: scale(1.1); /* Scale the image */
-}
-
-.frontInterview__button {
-  display: inline-block;
-  font-size: 2.5rem;
-  color: #fff;
-  position: absolute;
-  bottom: 1rem;
-  right: 1rem;
-}
-.imgDark {
-  width: 100%;
-  height: 40rem;
-  background: rgba(0, 0, 0, 0.6);
-  transition: all 0.3s;
-}
-.imgDark:hover {
-  width: 100%;
-  height: 40rem;
-  background: rgba(0, 0, 0, 0.2);
-}
-.frontInterview__imgText {
-  padding: 1rem;
-  color: white;
-  font-size: 3rem;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-.frontInterview__imgText.-second {
-  padding: 1rem;
-  color: white;
-  font-size: 3rem;
-  top: 0;
-  right: 0;
-}
-.frontInterview__title {
-  font-size: 3rem;
-  color: #fff;
-}
-
-@media (max-width: 1024px) {
-  .frontInterview {
-    padding: 10rem 0 20rem;
-  }
-  .interviewTitle {
-    font-size: 6rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .interviewTitle {
-    font-size: 5rem;
-    padding-bottom: 4rem;
-  }
-  .interviewTitle::after {
-    top: 8rem;
-  }
-  .interviewTitle__text {
-    font-size: 1.8rem;
-    margin-bottom: 7rem;
-  }
-  .frontInterview__flex {
-    flex-direction: column;
-  }
-  .frontInterview__container {
-    width: 100%;
-  }
-}
-@media (max-width: 480px) {
-  .frontInterview {
-    padding: 7rem 0 10rem;
-  }
-  .interviewTitle {
-    font-size: 4rem;
-  }
-  .interviewTitle::after {
-    top: 6rem;
-  }
-  .interviewTitle__text {
-    font-size: 1.6rem;
-    margin-bottom: 5rem;
-  }
-  .frontInterview__container {
-    height: 30rem;
-  }
-  .frontInterview__imgText {
-    font-size: 2.4rem;
-  }
-  .frontInterview__title {
-    font-size: 2.4rem;
-    padding: 1rem;
   }
 }
 
@@ -1721,10 +1527,8 @@ img {
     rgba(128, 128, 128, 1),
     rgba(0, 0, 0, 1)
   );
-  /* テキストにのみ背景色を適用 */
   -webkit-background-clip: text;
   background-clip: text;
-  /* テキストの色をゴールドに設定 */
   color: transparent;
   position: relative;
 }
@@ -1741,6 +1545,7 @@ img {
   position: absolute;
 }
 .timeTable__subTitle {
+  font-family: "Sharp", serif;
   font-size: 2rem;
   text-align: center;
   color: #5a5a5a;
@@ -1837,10 +1642,11 @@ img {
   .timeTableTitle {
     font-size: 2.8rem;
     padding-top: 7rem;
+    padding-bottom: 3.5rem;
   }
   .timeTableTitle::after {
     width: 65%;
-    top: 11rem;
+    top: 10.5rem;
   }
   .timeTable__subTitle {
     font-size: 1.2rem;
@@ -2000,18 +1806,19 @@ img {
     padding: 10rem 0 5rem;
   }
   .topicsTitle {
-    font-size: 4rem;
+    font-size: 3.5rem;
+    padding-bottom: 3rem;
   }
   .topicsTitle::after {
-    top: 5rem;
+    top: 4rem;
   }
   .topicsSubTitle {
-    font-size: 1.6rem;
-    margin-bottom: 7rem;
+    font-size: 1.4rem;
+    margin-bottom: 5rem;
   }
   .topicsPost__img {
-    width: 10rem;
-    aspect-ratio: 130/120;
+    width: 9rem;
+    aspect-ratio: 100/100;
   }
   .topicsPost__flex {
     flex-direction: column;
@@ -2019,12 +1826,12 @@ img {
   }
   .topicsPost__date,
   .topicsPost__author {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     margin-left: 0;
     margin-bottom: 0;
   }
   .topicsPost__title {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
   .topicsPost__noPost {
     font-size: 2rem;
@@ -2073,7 +1880,6 @@ img {
 .gallery__text {
   font-family: "Sharp", serif;
   font-size: 2rem;
-  font-weight: bold;
   color: #000;
   text-align: center;
   letter-spacing: 0.1em;
@@ -2114,7 +1920,6 @@ img {
   width: 50%;
   max-width: 30rem;
   font-size: 2rem;
-  font-weight: bold;
   display: block;
   padding: 2rem 5rem;
   letter-spacing: 0.1em;
@@ -2194,14 +1999,14 @@ img {
     padding: 10rem 0 5rem;
   }
   .galleryTitle {
-    font-size: 4rem;
-    padding-bottom: 3rem;
+    font-size: 3.5rem;
+    padding-bottom: 2rem;
   }
   .galleryTitle::after {
-    top: 5rem;
+    top: 4rem;
   }
   .gallery__text {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     margin-top: -1rem;
     margin-bottom: 5rem;
   }
@@ -2217,7 +2022,7 @@ img {
     display: none;
   }
   .galleryImg__link {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     margin-bottom: 0;
   }
 }
@@ -2255,6 +2060,7 @@ img {
   position: absolute;
 }
 .accessSubTitle {
+  font-family: "Sharp", serif;
   font-size: 2rem;
   text-align: center;
   color: #000;
@@ -2369,20 +2175,21 @@ img {
     padding: 10rem 0;
   }
   .accessTitle {
-    font-size: 4rem;
+    font-size: 3.5rem;
+    padding-bottom: 3.5rem;
   }
-  .accessTitle ::after {
-    top: 5rem;
+  .accessTitle::after {
+    top: 4.5rem;
   }
   .accessSubTitle {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     margin-bottom: 3rem;
   }
   .accessSubTitle::after {
     top: 5rem;
   }
   .accessText {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
   .accessImage {
     width: 90%;

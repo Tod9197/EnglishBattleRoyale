@@ -30,6 +30,7 @@
   position: absolute;
 }
 .sponsors__subTitle {
+  font-family: "Sharp", serif;
   font-size: 2.4rem;
   text-align: center;
   color: #000;
@@ -41,10 +42,12 @@
   padding: 2rem 5rem;
 }
 .sponsors__innerTitle {
+  font-family: "Sharp", serif;
   font-size: 2rem;
   font-weight: 500;
   position: relative;
   letter-spacing: 0.01em;
+  line-height: 1.6;
 }
 .sponsors__innerTitle::after {
   display: block;
@@ -89,8 +92,8 @@
 }
 .sponsors__list.-first span {
   display: inline-block;
-  font-size: 4rem;
-  height: 40px;
+  font-size: 2.8rem;
+  height: 31px;
   margin-top: -1rem;
 }
 .sponsors__list.-second {
@@ -125,12 +128,14 @@
   font-weight: bold;
   margin-right: 3rem;
   margin-bottom: 3rem;
+  letter-spacing: 0.05em;
 }
 .sponsors__listItem.-third {
   font-size: 2rem;
   font-weight: bold;
   margin-right: 2rem;
   margin-bottom: 2rem;
+  letter-spacing: 0.05em;
 }
 .sponsors__link {
   display: block;
@@ -216,17 +221,17 @@
     padding-top: 10rem;
   }
   .sponsors__contents {
-    padding: 5px;
+    padding: 4px;
   }
   .sponsors__title {
-    font-size: 3.6rem;
+    font-size: 2.8rem;
     padding: 5rem 0 5rem 0;
   }
   .sponsors__title::after {
-    top: 9rem;
+    top: 8.5rem;
   }
   .sponsors__subTitle {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     margin-top: -4rem;
   }
   .sponsors__inner {
@@ -256,14 +261,15 @@
     margin-bottom: 3rem;
   }
   .sponsors__listItem.-first {
-    font-size: 2.4rem;
+    font-size: 2rem;
     margin-right: 0;
+    line-height: 1.7;
   }
   .sponsors__listItem.-second {
-    font-size: 2rem;
+    font-size: 1.6rem;
     margin-right: 0;
   }
   .sponsors__listItem.-third {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
 }

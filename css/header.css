@@ -50,6 +50,10 @@
   background-clip: text;
   color: transparent;
 }
+.header__logo img {
+  width: 10rem;
+}
+
 @media (max-width: 1024px) {
   .header__logo {
     font-size: 4.5rem;
@@ -69,7 +73,10 @@
     font-size: 2.4rem;
   }
   .header__wrapper {
-    padding: 2rem 0;
+    padding: 1.5rem 0 2rem;
+  }
+  .header__logo img {
+    width: 8rem;
   }
 }
 
@@ -262,14 +269,12 @@
   .header {
     height: 6rem;
   }
-  .header__wrapper {
-  }
   .header.gray {
     padding: 2rem 0 1rem;
   }
   .hamburgerBtn {
     width: 40px;
-    height: 20px;
+    height: 30px;
     margin-top: 1rem;
   }
   .headerLine {

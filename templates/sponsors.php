@@ -111,10 +111,13 @@ get_header();
                   EFT Kawagoe 様
                 <a class="sponsors__link -second" href="https://eigonomachi.jp/" target="_blank" rel="noopener noreferrer">https://eigonomachi.jp/</a>
                 </li>
-                <li class="sponsors__listItem -second">井本化粧品店 様</li>
                 <li class="sponsors__listItem -second">
                   有限会社以心伝心 様
                 <a class="sponsors__link -second" href="https://isindensin.jp/" target="_blank" rel="noopener noreferrer">https://isindensin.jp/</a>
+                </li>
+                <br class="sp-only02">
+                <li class="sponsors__listItem -second">
+                  井本化粧品店 様
                 </li>
                 <li class="sponsors__listItem -second">カイロ坊主 伊藤督訓(ただのり) 様</li>
                 <li class="sponsors__listItem -second">

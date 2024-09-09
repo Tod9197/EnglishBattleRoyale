@@ -35,6 +35,9 @@
   color: transparent;
   line-height: 1;
 }
+.footer__logo img {
+  width: 10rem;
+}
 
 .footerList {
   display: flex;
@@ -124,6 +127,9 @@
   .footer__logo {
     font-size: 3rem;
     margin-bottom: 4rem;
+  }
+  .footer__logo img {
+    width: 8rem;
   }
   .footerList {
     flex-direction: column;

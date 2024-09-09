@@ -213,7 +213,7 @@ get_header(); ?>
     <h2 class="showDown__title">連覇か!!王座奪還か!?</h2>
     <div class="showDown__textRight">
       <div class="showDown__textWrap">
-    <p class="showDown__text -first">昨年のEBRで大接戦の末<br>見事優勝を果たした<mark>Team e-Go!</mark><br>今年はさらなる上達を目論み、<br>リーダーSherryを筆頭に<br>メンバー全員が貪欲に猛稽古に励む。<br>昨年よりパワーアップした<br>Team e-Go!は前回王者のプライド
+    <p class="showDown__text -first">昨年のEBRで大接戦の末<br>見事優勝を果たしたTeam e-Go!<br>今年はさらなる上達を目論み、<br>リーダーSherryを筆頭に<br>メンバー全員が貪欲に猛稽古に励む。<br>昨年よりパワーアップした<br>Team e-Go!は前回王者のプライド
     <br>を胸に大会連覇を狙う。<br>
     ２度目の大輪の華を<br class="sp-only">咲かせることができるか！？</p>
     </div>
@@ -222,7 +222,7 @@ get_header(); ?>
 
     <div class="showDown__textLeft">
       <div class="showDown__textWrap">
-    <p class="showDown__text -second">対して僅かの差で優勝を逃した<br><mark>Team H. Blacks</mark><br>
+    <p class="showDown__text -second">対して僅かの差で優勝を逃した<br>Team H. Blacks<br>
     このまま黙っていられない！<br>
     リーダーKirkを中心に想いは一つ。<br>
     昨年の悔しさをバネに<br class="sp-only02">今年こそはとリベンジを誓う。<br>

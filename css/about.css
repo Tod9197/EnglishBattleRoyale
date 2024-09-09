@@ -1,7 +1,7 @@
 /* About EBR */
 .about {
   padding: 20rem 0 10rem 0;
-  background-image: url(../img/bg04.jpg);
+  /* background-image: url(../img/bg04.jpg); */
   background-repeat: no-repeat;
   background-size: cover;
   /* z-index: -10; */
@@ -170,7 +170,7 @@
 .aboutContents__listItem span {
   font-style: italic;
   margin-right: 1.5rem;
-  margin-left: 1.7rem;
+  margin-left: 0;
   opacity: 0.7;
 }
 .aboutContents__listItem::before {
@@ -343,15 +343,15 @@
     padding: 7rem 0 3rem 0;
   }
   .aboutTitle {
-    font-size: 4rem;
-    margin-bottom: 3rem;
+    font-size: 3rem;
+    margin-bottom: 2rem;
   }
   .aboutSubTitle.-first {
     font-size: 2rem;
     letter-spacing: 0.05em;
   }
   .aboutSubTitle.-second {
-    font-size: 2.2rem;
+    font-size: 1.8rem;
     margin-bottom: 4rem;
   }
   .aboutFlex.-first {
@@ -370,8 +370,8 @@
     top: 6rem;
   }
   .aboutImg.-third {
-    width: 32rem;
-    height: 40rem;
+    width: 30rem;
+    height: 35rem;
   }
   .aboutImg.-fourth {
     width: 30rem;
@@ -381,27 +381,31 @@
     margin-top: 40rem;
   }
   .aboutContents__listItem {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
   .aboutContents__listItem::before {
     font-size: 2rem;
-    width: 5rem;
-    height: 5rem;
-    left: 0;
+    width: 4rem;
+    height: 4rem;
+    top: -0.5rem;
+    left: 0.5rem;
+  }
+  .aboutContents__listItem span {
+    margin-left: 1.7rem;
   }
   .aboutText,
   .aboutText.-second {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
 
   .aboutPictures__list {
     grid-template-columns: repeat(2, 1fr);
     gap: 0.5rem;
-    margin-bottom: 10rem;
+    margin-bottom: 5rem;
   }
   .aboutPictures__listItem img {
-    width: 14rem;
-    height: 14rem;
+    width: 11rem;
+    height: 11rem;
   }
   .aboutPictures__listItem:nth-child(2) {
     margin-top: 12rem;
