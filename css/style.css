@@ -404,8 +404,10 @@ img {
     font-size: 1.4rem;
   }
   .contestContents__link {
+    font-size: 1.2rem;
     margin-top: 3rem;
-    margin-bottom: 5rem;
+    margin-bottom: 4rem;
+    padding: 1rem 4rem;
   }
 }
 
@@ -426,7 +428,7 @@ img {
   color: #fff;
   top: 0;
   text-align: center;
-  -webkit-text-stroke: 2px #ddd; /* 文字の外側の線を黒に設定 */
+  -webkit-text-stroke: 1px #ddd; /* 文字の外側の線を黒に設定 */
   background-color: transparent; /* 背景色を透明に設定 */
   z-index: -1;
   white-space: nowrap;
@@ -443,7 +445,7 @@ img {
   bottom: 0;
   left: 0;
   text-align: center;
-  -webkit-text-stroke: 2px #ddd; /* 文字の外側の線を黒に設定 */
+  -webkit-text-stroke: 1px #ddd; /* 文字の外側の線を黒に設定 */
   background-color: transparent; /* 背景色を透明に設定 */
   z-index: -1;
   white-space: nowrap;
@@ -480,6 +482,12 @@ img {
   .inner {
     padding-right: 2.5rem;
     padding-left: 2.5rem;
+  }
+}
+@media (max-width: 480px) {
+  .inner {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
   }
 }
 
@@ -767,9 +775,11 @@ img {
     height: 56rem;
   }
   .impression__title {
-    font-size: 4rem;
+    font-size: 3.5rem;
+    padding-bottom: 1.5rem;
   }
   .impression__subTitle {
+    font-size: 1.4rem;
     margin-bottom: 4rem;
   }
   .impressionWords__item {
@@ -802,7 +812,7 @@ img {
 }
 @media (max-width: 480px) {
   .impression__bg {
-    height: 110rem;
+    height: 109.7rem;
   }
   .impression__subTitle {
     margin-bottom: 10rem;
@@ -836,14 +846,14 @@ img {
     bottom: 0;
   }
   .impressionWords__item.-seventh {
-    left: 18rem;
+    left: 16rem;
   }
   .impressionWords__item.-eight {
     bottom: 22rem;
   }
   .impressionWords__item.-ninth {
     top: 4rem;
-    right: 18rem;
+    right: 1rem;
   }
   .impressionWords__item.-tenth {
     top: 11rem;
@@ -1025,7 +1035,8 @@ img {
   }
   .showDown__barTitle.-first,
   .showDown__barTitle.-third {
-    font-size: 6.5rem;
+    font-size: 5.5rem;
+    line-height: 1.2;
   }
   .showDown__barTitle.-first {
     margin-bottom: 11rem;
@@ -1034,7 +1045,7 @@ img {
     font-size: 6rem;
   }
   .showDown__barTitle.-third {
-    margin-top: 10rem;
+    margin-top: 8rem;
     text-align: right;
   }
   .sp-only02 {
@@ -1470,8 +1481,12 @@ img {
     left: 0;
     top: 45rem;
   }
+  .showDown__DescriptionImg {
+    width: 25rem;
+    height: 25rem;
+  }
   .showDown__DescriptionImg.-second {
-    width: 75%;
+    width: 25rem;
     height: 40rem;
   }
 }
@@ -1813,25 +1828,31 @@ img {
   .timeTable {
     padding: 10rem 0;
   }
+  .timeTable__wrap {
+    padding: 10px;
+  }
+  .timeTable__outline {
+    padding: 6px;
+  }
   .timeTableTitle {
-    font-size: 3.4rem;
+    font-size: 2.8rem;
     padding-top: 7rem;
   }
   .timeTableTitle::after {
-    width: 80%;
-    top: 12rem;
+    width: 65%;
+    top: 11rem;
   }
   .timeTable__subTitle {
-    font-size: 1.6rem;
-    margin-bottom: 6rem;
+    font-size: 1.2rem;
+    margin-bottom: 5rem;
   }
   .timeTable__listItem {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     margin-bottom: 2rem;
   }
   .timeTable__listItem span {
     display: block;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     margin-left: 0;
   }
   .timeTable__listItem__link {

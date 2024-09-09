@@ -159,7 +159,7 @@ get_header(); ?>
         <img src="<?php echo esc_url(get_theme_file_uri('/img/ebr2023-20.jpg')); ?>" alt="パーティー画像3">
       </li>
     </ul>
-    <p class="aboutPrice">【参加費】<br>コンテスト＆パーティ：18,000円 前後</p>
+    <p class="aboutPrice">【参加費】<br>コンテスト＆パーティ：18,000円前後</p>
   </div>
   <div class="requestWrap -about">
     <div class="requestInner__line">

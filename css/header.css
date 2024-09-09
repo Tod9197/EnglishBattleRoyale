@@ -115,9 +115,6 @@
   margin-left: auto;
 }
 @media (max-width: 1024px) {
-  .header__wrapper {
-    align-items: unset;
-  }
   .header__menuRight {
     display: none;
   }
