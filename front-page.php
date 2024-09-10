@@ -382,6 +382,7 @@ else :
 <p>ギャラリー写真はありません</p>
 <?php endif; ?>
   </div>
+  <p class="galleryImg__listItem__text">※クリックで拡大できます</p>
   <a class="galleryImg__link" href="<?php echo esc_url(home_url('/gallerylist')) ?>">写真をもっと見る</a>
 
   <!-- モーダル -->

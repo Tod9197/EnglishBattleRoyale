@@ -441,13 +441,15 @@
   }
   .aboutImg.-fifth {
     top: 35rem;
-    height: 25rem;
+    width: 28rem;
+    height: 20rem;
+    left: 1rem;
   }
   .aboutImg.-sixth {
-    width: 20rem;
-    height: 30rem;
+    width: 18rem;
+    height: 27rem;
     top: 47rem;
-    left: 10rem;
+    left: 8rem;
   }
   .aboutContents.-first {
     margin-top: 40rem;

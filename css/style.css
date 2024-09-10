@@ -369,6 +369,7 @@ img {
   padding: 2rem;
   width: 50%;
   max-width: 30rem;
+  font-family: "Hiragino Kaku Gothic Pro", "Arial", sans-serif;
   font-size: 2rem;
   display: block;
   padding: 2rem 5rem;
@@ -388,6 +389,8 @@ img {
   );
 }
 .contestContents__link.-about {
+  font-family: "Hiragino Kaku Gothic Pro", "Arial", sans-serif;
+  font-weight: 400;
   margin-top: 6rem;
   margin-bottom: 3rem;
 }
@@ -836,7 +839,8 @@ img {
     padding: 1rem 1.5rem;
   }
   .impressionWords__item.-first {
-    top: 43%;
+    top: 45%;
+    left: 35%;
   }
   .impressionWords__item.-second {
     top: -7rem;
@@ -863,7 +867,7 @@ img {
   }
   .impressionWords__item.-ninth {
     top: 7rem;
-    right: 16rem;
+    right: 15.5rem;
   }
   .impressionWords__item.-tenth {
     top: 11rem;
@@ -1894,12 +1898,11 @@ img {
   letter-spacing: 0.1em;
   margin-bottom: 10rem;
 }
-
 .galleryImg__list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
-  margin-bottom: 10rem;
+  margin-bottom: 3rem;
 }
 .galleryImg__listItem {
   cursor: pointer;
@@ -1920,6 +1923,14 @@ img {
   height: 100%;
   aspect-ratio: 360/300;
   object-fit: cover;
+}
+.galleryImg__listItem__text {
+  font-family: "Hiragino Kaku Gothic Pro", "Arial", sans-serif;
+  color: #000;
+  text-align: left;
+  font-size: 1.8rem;
+  margin-top: 1rem;
+  letter-spacing: 0.1em;
 }
 
 .galleryImg__link {
@@ -2003,6 +2014,13 @@ img {
   .galleryImg__list {
     grid-template-columns: repeat(3, 1fr);
   }
+  .galleryImg__listItem__text {
+    font-size: 1.6rem;
+  }
+  .galleryImg__link {
+    margin-top: 5rem;
+    margin-bottom: 0;
+  }
 }
 @media (max-width: 480px) {
   .gallery {
@@ -2023,7 +2041,7 @@ img {
   .galleryImg__list {
     grid-template-columns: repeat(2, 1fr);
     gap: 1;
-    margin-bottom: -5rem;
+    margin-bottom: 3rem;
   }
   .galleryImg__listItem {
     width: 100%;
@@ -2033,7 +2051,11 @@ img {
   }
   .galleryImg__link {
     font-size: 1.4rem;
+    margin-top: 5rem;
     margin-bottom: 0;
+  }
+  .galleryImg__listItem__text {
+    font-size: 1.4rem;
   }
 }
 
