@@ -139,12 +139,12 @@
 }
 @media (max-width: 768px) {
   .modal__wrap {
-    width: 90%;
+    width: 80%;
     top: 45%;
   }
   .modal__close {
     width: 1.5rem;
-    height: 1.5rem;
+    height: 1rem;
     font-size: 2rem;
     top: -5rem;
     right: 2rem;

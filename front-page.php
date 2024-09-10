@@ -98,7 +98,7 @@ get_header(); ?>
       <ul class="aboutContents__list">
         <li class="aboutContents__listItem">
           <span>1</span>チーム対抗戦
-         <p class="aboutText -second">
+        <p class="aboutText -second">
           一般的にスピーチと言えば一人で話す「個人戦」が普通。
           <br class="pc-only02">
           EBRでは2チームに分かれて優勝を争う「団体戦」を採用。
@@ -107,6 +107,7 @@ get_header(); ?>
           <br class="pc-only02">
           普通のスピーチより楽しく、興奮、感動します。
         </p>
+        <img class="aboutContents__img" src="<?php echo esc_url(get_theme_file_uri('/img/ebr2023-36.jpg')); ?>" alt="コンテスト画像1">
         </li>
         <li class="aboutContents__listItem">
           <span>2</span>多様な競技種目
@@ -118,6 +119,7 @@ get_header(); ?>
           多様な競技種目があり、やる方も見る方もみんなが楽しめます。
         </p>
           <!-- 詳細ページリンク -->
+          <img class="aboutContents__img" src="<?php echo esc_url(get_theme_file_uri('/img/ebr2023-35.jpg')); ?>" alt="コンテスト画像">
     <a class="contestContents__link -about" href="<?php echo esc_url(home_url('/contest')); ?>">競技詳細ページは<br class="sp-only">こちら</a>
         </li>
         <li class="aboutContents__listItem">
@@ -129,12 +131,15 @@ get_header(); ?>
           <br class="pc-only02">
           色んなバックグラウンドを持つ方々と交流ができます。
         </p>
+        <img class="aboutContents__img" src="<?php echo esc_url(get_theme_file_uri('/img/ebr2023-37.jpg')); ?>" alt="パーティー画像">
         </li>
       </ul>
     </div>
     <div class="aboutImg__box -second">
-     <div class="aboutImg -fourth"></div>
-     <div class="aboutImg -third"></div>
+    <div class="aboutImg -fourth"></div>
+    <div class="aboutImg -third"></div>
+    <div class="aboutImg -fifth"></div>
+    <div class="aboutImg -sixth"></div>
     </div>
   </div>
 

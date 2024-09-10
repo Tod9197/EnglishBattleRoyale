@@ -72,8 +72,8 @@ img {
   opacity: 0.8;
 }
 .backToTop__button.-mobile {
-  right: 2rem;
-  bottom: 7rem;
+  right: 1.5rem;
+  bottom: 6.5rem;
   color: #000;
   background-color: #ddd;
 }
@@ -299,8 +299,8 @@ img {
     width: 1.2rem;
     height: 1.2rem;
     font-size: 1.2rem;
-    padding: 1.5rem;
-    padding-bottom: 1.8rem;
+    padding: 1.1rem;
+    padding-bottom: 1.3rem;
   }
 }
 @media (max-width: 480px) {
@@ -402,6 +402,10 @@ img {
   .contestContents__link,
   .contestContents__link.-about {
     font-size: 1.4rem;
+  }
+  .contestContents__link.-about {
+    margin-top: 3rem;
+    margin-bottom: 0;
   }
   .contestContents__link {
     font-size: 1.2rem;
@@ -657,6 +661,7 @@ img {
   opacity: 0;
   position: absolute;
   letter-spacing: 0.2em;
+  line-height: 1.8;
   padding: 2rem;
   background-color: #fff;
   border-radius: 20px;
@@ -771,7 +776,7 @@ img {
     padding: 7rem 0 0;
   }
   .impression__bg {
-    height: 86.7rem;
+    height: 85.5rem;
   }
   .impressionWords {
     height: 56rem;
@@ -814,7 +819,7 @@ img {
 }
 @media (max-width: 480px) {
   .impression__bg {
-    height: 109rem;
+    height: 108.5rem;
   }
   .impression__title::after {
     width: 35%;
@@ -851,14 +856,14 @@ img {
     bottom: 0;
   }
   .impressionWords__item.-seventh {
-    left: 16rem;
+    left: 15rem;
   }
   .impressionWords__item.-eight {
     bottom: 22rem;
   }
   .impressionWords__item.-ninth {
-    top: 4rem;
-    right: 18rem;
+    top: 7rem;
+    right: 16rem;
   }
   .impressionWords__item.-tenth {
     top: 11rem;
@@ -1292,10 +1297,9 @@ img {
 }
 
 .showDown__text {
-  font-family: "MS Mincho", serif;
+  font-family: "Hiragino Kaku Gothic Pro", "Arial", sans-serif;
   color: #000;
   font-size: 2rem;
-  font-weight: bold;
   text-align: left;
   letter-spacing: 0.1em;
   line-height: 1.87;
@@ -1583,6 +1587,7 @@ img {
 }
 .timeTable__listItem {
   color: #5a5a5a;
+  font-family: "Hiragino Kaku Gothic Pro", "Arial", sans-serif;
   font-size: 2.4rem;
   font-weight: 500;
   margin-bottom: 5rem;
@@ -1700,6 +1705,7 @@ img {
   position: absolute;
 }
 .topicsSubTitle {
+  font-family: "Sharp", serif;
   font-size: 2rem;
   text-align: center;
   color: #000;
@@ -1734,17 +1740,20 @@ img {
   margin-bottom: 3rem;
 }
 .topicsPost__date {
+  font-family: "Hiragino Kaku Gothic Pro", "Arial", sans-serif;
   font-size: 2.2rem;
   color: #000;
   letter-spacing: 0.1em;
 }
 .topicsPost__author {
+  font-family: "Hiragino Kaku Gothic Pro", "Arial", sans-serif;
   font-size: 2.2rem;
   color: #000;
   letter-spacing: 0.1em;
   margin-left: 2rem;
 }
 .topicsPost__title {
+  font-family: "Hiragino Kaku Gothic Pro", "Arial", sans-serif;
   font-size: 3rem;
   color: #000;
   letter-spacing: 0.1em;
@@ -1914,6 +1923,7 @@ img {
 }
 
 .galleryImg__link {
+  font-family: "Hiragino Kaku Gothic Pro", "Arial", sans-serif;
   color: #000;
   text-align: center;
   padding: 2rem;
@@ -2069,6 +2079,7 @@ img {
   letter-spacing: 0.1em;
 }
 .accessText {
+  font-family: "Sharp", serif;
   font-size: 3rem;
   font-weight: bold;
   color: #000;

@@ -87,20 +87,19 @@
   flex-wrap: wrap;
   margin-top: 5rem;
   margin-bottom: 5rem;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
   border-bottom: 2px solid #ffd700;
 }
 .sponsors__list.-first span {
   display: inline-block;
   font-size: 2.8rem;
-  height: 31px;
+  height: 20px;
   margin-top: -1rem;
 }
 .sponsors__list.-second {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 5rem;
-  padding-bottom: 2rem;
   border-bottom: 2px solid #ffd700;
 }
 .sponsors__list.-second span {
@@ -114,7 +113,7 @@
   flex-direction: column;
   flex-wrap: wrap;
   flex-direction: row;
-  margin-bottom: 10rem;
+  margin-bottom: 5rem;
   overflow: hidden;
 }
 .sponsors__listItem.-first {
@@ -241,10 +240,10 @@
     top: 7rem;
   }
   .sponsors__innerTitle {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
   .sponsors__innerTitle::after {
-    top: 6rem;
+    top: 5.5rem;
   }
   .sponsors__text {
     font-size: 1.4rem;
@@ -268,6 +267,10 @@
   .sponsors__listItem.-second {
     font-size: 1.6rem;
     margin-right: 0;
+  }
+  .sponsors__list.-second span {
+    font-size: 2rem;
+    height: 20px;
   }
   .sponsors__listItem.-third {
     font-size: 1.4rem;
