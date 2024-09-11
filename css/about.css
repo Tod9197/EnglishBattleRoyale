@@ -141,6 +141,7 @@
   padding: 0;
 }
 .aboutSubTitle.-second {
+  font-family: "Hiragino Kaku Gothic Pro", "Arial", sans-serif;
   text-align: center;
   background-image: linear-gradient(
     150deg,

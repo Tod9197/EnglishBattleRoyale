@@ -91,7 +91,7 @@ get_header(); ?>
   </div>
 
    <p class="aboutSubTitle -second">
-    EBRは他のスピーチコンテストとここが違う！！
+    EBRは他のスピーチコンテストとはここが違う！！
   </p>
   <div class="aboutFlex -second">
     <div class="aboutContents">
@@ -254,12 +254,12 @@ get_header(); ?>
           <li class="timeTable__listItem">15:00 開場</li>
           <li class="timeTable__listItem">15:10 開会の挨拶</li>
           <li class="timeTable__listItem">15:20 競技種目①(個人)<span>引用文の音読</span></span></li>
-          <li class="timeTable__listItem">15:40 競技種目②(個人)<span>Delivery = ぶっ放す</span></span></li>
-          <li class="timeTable__listItem">16:00 競技種目③(団体)<span>音節分化即時対応</span></span></li>
+          <li class="timeTable__listItem">15:50 競技種目②(個人)<span>Delivery = ぶっ放す</span></span></li>
+          <li class="timeTable__listItem">16:10 競技種目③(団体)<span>音節分化即時対応</span></span></li>
           <li class="timeTable__listItem">休憩</li>
-          <li class="timeTable__listItem">16:40 競技種目④(団体)<span>チーム対抗歌合戦</span></span></li>
-          <li class="timeTable__listItem">17:00 競技種目⑤(個人)<span>アテレコ</span></spaN></li>
-          <li class="timeTable__listItem">17:15 競技種目⑥(個人)<span>ビデオレター</span></spaN></li>
+          <li class="timeTable__listItem">17:00 競技種目④(団体)<span>チーム対抗歌合戦</span></span></li>
+          <li class="timeTable__listItem">17:30 競技種目⑤(個人)<span>アテレコ</span></spaN></li>
+          <li class="timeTable__listItem">18:00 競技種目⑥(個人)<span>ビデオレター</span></spaN></li>
           <li class="timeTable__listItem">18:30 〜 21:00<span>パーティー</span></spaN></li>
          </ul>
 
