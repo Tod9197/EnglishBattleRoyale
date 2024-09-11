@@ -171,6 +171,12 @@
   .sponsors__textSecond {
     font-size: 2.2rem;
   }
+  .sponsors__list.-first span {
+    display: inline-block;
+    font-size: 3.2rem;
+    height: 35px;
+    margin-top: -1rem;
+  }
 }
 @media (max-width: 768px) {
   .sponsors {
@@ -262,11 +268,14 @@
   .sponsors__listItem.-first {
     font-size: 2rem;
     margin-right: 0;
-    line-height: 1.7;
+    line-height: 1.5;
   }
   .sponsors__listItem.-second {
     font-size: 1.6rem;
     margin-right: 0;
+  }
+  .sponsors__list.-first span {
+    height: 31px;
   }
   .sponsors__list.-second span {
     font-size: 2rem;
