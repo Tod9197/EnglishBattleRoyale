@@ -34,8 +34,10 @@
           <li class="header__listItem"><a href="<?php echo esc_url(home_url('/sponsors')); ?>">sponsors</a></li>
         </ul>
         </div>
-        <a class="header__logo" href="<?php echo esc_url(home_url('/ebr')); ?>">EBR</a>
-
+        <a class="header__logo" href="<?php echo esc_url(home_url('/')); ?>">
+        <img src="<?php echo esc_url(get_theme_file_uri('/img/ebr-logo.png')); ?>" alt="EBRロゴ">
+        </a>
+         
         <!-- ハンバーガーメニュー -->
         <button class="hamburgerBtn" id="js-hamburger">
           <span class="headerLine -first" id="js-hamburgerLine-first"></span>

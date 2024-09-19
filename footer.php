@@ -1,7 +1,9 @@
 <footer class="footer">
   <div class="inner">
     <div class="footerFlex">
-    <a class="footer__logo" href="<?php echo esc_url(home_url('/ebr')); ?>">EBR</a>
+    <a class="footer__logo" href="<?php echo esc_url(home_url('/')); ?>">
+    <img src="<?php echo esc_url(get_theme_file_uri('/img/ebr-logo.png')); ?>" alt="EBRロゴ">
+    </a>
     <ul class="footerList">
       <li class="footerList__item">
         <p class="footerList__itemTitle">ABOUT</p>  

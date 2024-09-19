@@ -236,12 +236,14 @@
     font-size: 5rem;
   }
   .mainVisual__title::before {
-    font-size: 5rem;
+    font-size: 4.5rem;
+    bottom: -6rem;
   }
   .mainVisual__title::after {
-    width: 11rem;
+    width: 10rem;
     font-size: 1.4rem;
-    right: 10%;
+    right: 8%;
+    top: -3rem;
   }
   .mainVisual.-gallery,
   .mainVisual.-sponsors,

@@ -111,10 +111,13 @@ get_header();
                   EFT Kawagoe 様
                 <a class="sponsors__link -second" href="https://eigonomachi.jp/" target="_blank" rel="noopener noreferrer">https://eigonomachi.jp/</a>
                 </li>
-                <li class="sponsors__listItem -second">井本化粧品店 様</li>
                 <li class="sponsors__listItem -second">
                   有限会社以心伝心 様
                 <a class="sponsors__link -second" href="https://isindensin.jp/" target="_blank" rel="noopener noreferrer">https://isindensin.jp/</a>
+                </li>
+                <br class="sp-only02">
+                <li class="sponsors__listItem -second">
+                  井本化粧品店 様
                 </li>
                 <li class="sponsors__listItem -second">カイロ坊主 伊藤督訓(ただのり) 様</li>
                 <li class="sponsors__listItem -second">
@@ -207,7 +210,7 @@ get_header();
               <li class="sponsors__listItem -third">四ッ橋奈央 様</li>
               </ul>
             <p class="sponsors__text">EBRの開催にご協力いただきました皆様、誠にありがとうございました。<br class="pc-only03">皆様の温かいご支援のおかげで、2023年度EBRは大成功を収めることができました。<br class="pc-only03">改めて心より感謝申し上げます。
-            <p class="sponsors__text -second">今後とも<span>升砲館EBR</span>をよろしくお願いいたします。</p>
+            <p class="sponsors__text -second">今後とも、<span>升砲館EBR</span>をよろしくお願いいたします。</p>
             <p class="sponsors__textSecond">ー EBR2023実行委員会 ー</p>
             </div>
           </div>

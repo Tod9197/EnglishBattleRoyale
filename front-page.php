@@ -92,14 +92,14 @@ get_header(); ?>
   </div>
 
    <p class="aboutSubTitle -second">
-    EBRは他のスピーチコンテストとここが違う！！
+    EBRは他のスピーチコンテストとはここが違う！！
   </p>
   <div class="aboutFlex -second">
     <div class="aboutContents">
       <ul class="aboutContents__list">
         <li class="aboutContents__listItem">
           <span>1</span>チーム対抗戦
-         <p class="aboutText -second">
+        <p class="aboutText -second">
           一般的にスピーチと言えば一人で話す「個人戦」が普通。
           <br class="pc-only02">
           EBRでは2チームに分かれて優勝を争う「団体戦」を採用。
@@ -108,6 +108,7 @@ get_header(); ?>
           <br class="pc-only02">
           普通のスピーチより楽しく、興奮、感動します。
         </p>
+        <img class="aboutContents__img" src="<?php echo esc_url(get_theme_file_uri('/img/ebr2023-36.jpg')); ?>" alt="コンテスト画像1">
         </li>
         <li class="aboutContents__listItem">
           <span>2</span>多様な競技種目
@@ -119,6 +120,7 @@ get_header(); ?>
           多様な競技種目があり、やる方も見る方もみんなが楽しめます。
         </p>
           <!-- 詳細ページリンク -->
+          <img class="aboutContents__img" src="<?php echo esc_url(get_theme_file_uri('/img/ebr2023-35.jpg')); ?>" alt="コンテスト画像">
     <a class="contestContents__link -about" href="<?php echo esc_url(home_url('/contest')); ?>">競技詳細ページは<br class="sp-only">こちら</a>
         </li>
         <li class="aboutContents__listItem">
@@ -130,12 +132,15 @@ get_header(); ?>
           <br class="pc-only02">
           色んなバックグラウンドを持つ方々と交流ができます。
         </p>
+        <img class="aboutContents__img" src="<?php echo esc_url(get_theme_file_uri('/img/ebr2023-37.jpg')); ?>" alt="パーティー画像">
         </li>
       </ul>
     </div>
     <div class="aboutImg__box -second">
-     <div class="aboutImg -fourth"></div>
-     <div class="aboutImg -third"></div>
+    <div class="aboutImg -fourth"></div>
+    <div class="aboutImg -third"></div>
+    <div class="aboutImg -fifth"></div>
+    <div class="aboutImg -sixth"></div>
     </div>
   </div>
 
@@ -160,7 +165,7 @@ get_header(); ?>
         <img src="<?php echo esc_url(get_theme_file_uri('/img/ebr2023-20.jpg')); ?>" alt="パーティー画像3">
       </li>
     </ul>
-    <p class="aboutPrice">【参加費】<br>コンテスト＆パーティ：18,000円 前後</p>
+    <p class="aboutPrice">【参加費】<br>コンテスト＆パーティ：18,000円前後</p>
   </div>
   <div class="requestWrap -about">
     <div class="requestInner__line">
@@ -214,7 +219,7 @@ get_header(); ?>
     <h2 class="showDown__title">連覇か!!王座奪還か!?</h2>
     <div class="showDown__textRight">
       <div class="showDown__textWrap">
-    <p class="showDown__text -first">昨年のEBRで大接戦の末<br>見事優勝を果たした<mark>Team e-Go!</mark><br>今年はさらなる上達を目論み、<br>リーダーSherryを筆頭に<br>メンバー全員が貪欲に猛稽古に励む。<br>昨年よりパワーアップした<br>Team e-Go!は前回王者のプライド
+    <p class="showDown__text -first">昨年のEBRで大接戦の末<br>見事優勝を果たしたTeam e-Go!<br>今年はさらなる上達を目論み、<br>リーダーSherryを筆頭に<br>メンバー全員が貪欲に猛稽古に励む。<br>昨年よりパワーアップした<br>Team e-Go!は前回王者のプライド
     <br>を胸に大会連覇を狙う。<br>
     ２度目の大輪の華を<br class="sp-only">咲かせることができるか！？</p>
     </div>
@@ -223,7 +228,7 @@ get_header(); ?>
 
     <div class="showDown__textLeft">
       <div class="showDown__textWrap">
-    <p class="showDown__text -second">対して僅かの差で優勝を逃した<br><mark>Team H. Blacks</mark><br>
+    <p class="showDown__text -second">対して僅かの差で優勝を逃した<br>Team H. Blacks<br>
     このまま黙っていられない！<br>
     リーダーKirkを中心に想いは一つ。<br>
     昨年の悔しさをバネに<br class="sp-only02">今年こそはとリベンジを誓う。<br>
@@ -250,12 +255,12 @@ get_header(); ?>
           <li class="timeTable__listItem">15:00 開場</li>
           <li class="timeTable__listItem">15:10 開会の挨拶</li>
           <li class="timeTable__listItem">15:20 競技種目①(個人)<span>引用文の音読</span></span></li>
-          <li class="timeTable__listItem">15:40 競技種目②(個人)<span>Delivery = ぶっ放す</span></span></li>
-          <li class="timeTable__listItem">16:00 競技種目③(団体)<span>音節分化即時対応</span></span></li>
+          <li class="timeTable__listItem">15:50 競技種目②(個人)<span>Delivery = ぶっ放す</span></span></li>
+          <li class="timeTable__listItem">16:10 競技種目③(団体)<span>音節分化即時対応</span></span></li>
           <li class="timeTable__listItem">休憩</li>
-          <li class="timeTable__listItem">16:40 競技種目④(団体)<span>チーム対抗歌合戦</span></span></li>
-          <li class="timeTable__listItem">17:00 競技種目⑤(個人)<span>アテレコ</span></spaN></li>
-          <li class="timeTable__listItem">17:15 競技種目⑥(個人)<span>ビデオレター</span></spaN></li>
+          <li class="timeTable__listItem">17:00 競技種目④(団体)<span>チーム対抗歌合戦</span></span></li>
+          <li class="timeTable__listItem">17:30 競技種目⑤(個人)<span>アテレコ</span></spaN></li>
+          <li class="timeTable__listItem">18:00 競技種目⑥(個人)<span>ビデオレター</span></spaN></li>
           <li class="timeTable__listItem">18:30 〜 21:00<span>パーティー</span></spaN></li>
          </ul>
 
@@ -378,6 +383,7 @@ else :
 <p>ギャラリー写真はありません</p>
 <?php endif; ?>
   </div>
+  <p class="galleryImg__listItem__text">※クリックで拡大できます</p>
   <a class="galleryImg__link" href="<?php echo esc_url(home_url('/gallerylist')) ?>">写真をもっと見る</a>
 
   <!-- モーダル -->

@@ -46,7 +46,7 @@ get_header();
       $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
       $args = array(
         'post_type' => 'gallery',
-        'posts_per_page' => 12,
+        'posts_per_page' => 16,
         'category_name' => 'ebr2023',
         'paged' => $paged
       );
@@ -65,7 +65,7 @@ get_header();
         endwhile; 
       ?>
     </div>
-
+    <p class="galleryImg__listItem__text">※クリックで拡大できます</p>
     <!-- ページネーション -->
     <div class="galleryArchive__pagination">
       <?php  
