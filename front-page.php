@@ -52,6 +52,7 @@ get_header(); ?>
   </div>
   <div class="requestWrap">
     <div class="requestInner__line">
+      <p>aaa</p>
   <p class="requestText">EBRに申し込む</p>
   <div class="requestButton__flex">
   <a class="requestButton -guest" href="https://docs.google.com/forms/d/e/1FAIpQLSeN66tRCIuVy8_pssjk8pJMNnZeN5tHjHtCJwJsNybvOeVeBw/viewform" target="_blank" rel="noopener noreferrer">ゲストの方はこちら</a>
@@ -62,6 +63,8 @@ get_header(); ?>
   </div>
   </div>
 </section>
+
+
 
 <!-- About -->
 <section class="about" id="about">

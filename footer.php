@@ -1,15 +1,13 @@
 <footer class="footer">
   <div class="inner">
     <div class="footerFlex">
-    <a class="footer__logo" href="/">EBR</a>
+    <a class="footer__logo" href="<?php echo esc_url(home_url('/ebr')); ?>">EBR</a>
     <ul class="footerList">
       <li class="footerList__item">
         <p class="footerList__itemTitle">ABOUT</p>  
         <a href="<?php echo esc_url(home_url('/#about')); ?>">EBRについて</a>
         <p class="footerList__itemTitle -interview">SHOHOKAN WEBSITE</p>
         <a href="https://shohokan.net/" target="_blank" rel="noopener noreferrer">英語道場 升砲館 公式ウェブサイト</a>
-        <!-- <p class="footerList__itemTitle -interview">INTERVIEW</p>
-        <a href="#interview">インタビュー</a> -->
       </li>
       <li class="footerList__item">
         <p class="footerList__itemTitle">ACCESS</p>
