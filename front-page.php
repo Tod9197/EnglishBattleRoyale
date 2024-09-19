@@ -50,9 +50,13 @@ get_header(); ?>
     <span class="Timer__text" id="timer-min"></span>分
     <span class="Timer__text" id="timer-sec"></span>秒
   </div>
+  <div class="Timer__scheduleWrap">
+    <p class="Timer__scheduleText">【開催日時】2024年12月14日(土)<br class="sp-only02"> 15時 〜 21時</p>
+    <p class="Timer__schedulePrice">【参加費用】コンテスト&パーティー<br class="sp-only02"> 18,000円前後</p>
+    <p class="Timer__schedulePlace">【開催場所】未定(東京都内予定)</p>
+  </div>
   <div class="requestWrap">
     <div class="requestInner__line">
-      <p>aaa</p>
   <p class="requestText">EBRに申し込む</p>
   <div class="requestButton__flex">
   <a class="requestButton -guest" href="https://docs.google.com/forms/d/e/1FAIpQLSeN66tRCIuVy8_pssjk8pJMNnZeN5tHjHtCJwJsNybvOeVeBw/viewform" target="_blank" rel="noopener noreferrer">ゲストの方はこちら</a>

@@ -533,6 +533,25 @@ img {
   font-size: 5rem;
   font-weight: bold;
 }
+.Timer__scheduleWrap {
+  width: 100%;
+  margin-top: 12rem;
+  margin-bottom: 15rem;
+}
+.Timer__scheduleText,
+.Timer__schedulePrice,
+.Timer__schedulePlace {
+  font-family: "Hiragino Kaku Gothic Pro", "Arial", sans-serif;
+  font-size: 2.8rem;
+  display: block;
+  text-align: center;
+  letter-spacing: 0.1em;
+  margin-bottom: 3rem;
+  text-wrap: wrap;
+}
+.Timer__schedulePlace {
+  margin-bottom: 0;
+}
 
 @media (max-width: 1024px) {
   .Timer__title {
@@ -551,6 +570,15 @@ img {
   .Timer__wrap::before {
     font-size: 2rem;
     top: -16.5rem;
+  }
+  .Timer__scheduleWrap {
+    margin-top: 10rem;
+    margin-bottom: 12rem;
+  }
+  .Timer__scheduleText,
+  .Timer__schedulePrice,
+  .Timer__schedulePlace {
+    font-size: 2.4rem;
   }
 }
 @media (max-width: 768px) {
@@ -578,6 +606,15 @@ img {
     font-size: 2rem;
     top: -14.5rem;
   }
+  .Timer__scheduleWrap {
+    margin-top: 8rem;
+    margin-bottom: 10rem;
+  }
+  .Timer__scheduleText,
+  .Timer__schedulePrice,
+  .Timer__schedulePlace {
+    font-size: 2rem;
+  }
 }
 @media (max-width: 480px) {
   .Timer::before,
@@ -600,6 +637,15 @@ img {
   .Timer__wrap::before {
     font-size: 1.6rem;
     top: -7rem;
+  }
+  .Timer__scheduleWrap {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+  .Timer__scheduleText,
+  .Timer__schedulePrice,
+  .Timer__schedulePlace {
+    font-size: 1.6rem;
   }
 }
 
