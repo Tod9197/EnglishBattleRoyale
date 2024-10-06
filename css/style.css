@@ -236,7 +236,7 @@ img {
   color: #000;
   writing-mode: vertical-rl;
   letter-spacing: 0.2em;
-  padding: 4rem 1rem;
+  padding: 4rem 2rem;
   transition: 0.5s all;
 }
 .requestLink__text.-student {
@@ -271,7 +271,7 @@ img {
 @media (max-width: 768px) {
   .requestLink__text {
     font-size: 1rem;
-    padding: 3rem 0.5rem;
+    padding: 3rem 1.5rem;
   }
   .requestText {
     font-size: 3.2rem;
